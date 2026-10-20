@@ -13,8 +13,8 @@
     explain: [
       {
         h: { vi: "1. Cấu trúc bài Task 2 và phân bổ 40 phút", en: "1. Task 2 structure and the 40-minute plan" },
-        vi: "Một bài Task 2 gọn gàng thường có 4 đoạn: Mở bài (2–3 câu), Thân bài 1, Thân bài 2 và Kết bài (2 câu). Đề yêu cầu tối thiểu 250 từ; bài 270–320 từ là vùng an toàn. Gợi ý thời gian: 5 phút lập dàn ý, 30 phút viết, 5 phút soát lỗi. Mỗi đoạn thân bài theo mô hình TEEL đã học ở Bài 01 (Topic sentence – Explanation – Example – Link).",
-        en: "A clear Task 2 essay usually has 4 paragraphs: Introduction (2–3 sentences), Body 1, Body 2 and Conclusion (2 sentences). The minimum is 250 words; 270–320 words is a safe range. Suggested timing: 5 minutes planning, 30 minutes writing, 5 minutes checking. Each body paragraph follows the TEEL model from Lesson 01 (Topic sentence – Explanation – Example – Link)."
+        vi: "Một bài Task 2 gọn gàng thường có 4 đoạn: Mở bài (2–3 câu), Thân bài 1, Thân bài 2 và Kết bài (2 câu). Đề yêu cầu tối thiểu 250 từ; bài 260–320 từ là vùng an toàn. Gợi ý thời gian: 5 phút lập dàn ý, 30 phút viết, 5 phút soát lỗi. Mỗi đoạn thân bài theo mô hình TEEL đã học ở Bài 01 (Topic sentence – Explanation – Example – Link).",
+        en: "A clear Task 2 essay usually has 4 paragraphs: Introduction (2–3 sentences), Body 1, Body 2 and Conclusion (2 sentences). The minimum is 250 words; 260–320 words is a safe range. Suggested timing: 5 minutes planning, 30 minutes writing, 5 minutes checking. Each body paragraph follows the TEEL model from Lesson 01 (Topic sentence – Explanation – Example – Link)."
       },
       {
         h: { vi: "2. Mở bài = paraphrase + thesis", en: "2. Introduction = paraphrase + thesis" },

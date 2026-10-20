@@ -221,10 +221,10 @@
               opts: ["It should be removed from the report.", "It should be phrased as something the university could discuss with the company.", "It is the strongest recommendation in the report."], a: 1,
               why: { vi: "“the bus company isn't part of your study. Phrase it as something the university could discuss with them.” Dr Grant không yêu cầu bỏ đi.", en: "“the bus company isn't part of your study. Phrase it as something the university could discuss with them.” She does not ask them to remove it." } },
             { id: "w07-q10", type: "gap", q: "The written report is due on ___ December.", limit: { words: 3, number: true },
-              accept: ["5", "5th", "fifth", "the fifth", "the 5th"],
+              accept: ["5", "5th", "fifth", "the fifth", "the 5th", "the fifth of", "the 5th of"],
               why: { vi: "“The written report is due on the fifth of December, and the presentation is the week after.”", en: "“The written report is due on the fifth of December, and the presentation is the week after.”" } },
             { id: "w07-q11", type: "short", q: "Where will the presentation take place?", limit: { words: 3, number: true },
-              accept: ["seminar room four", "seminar room 4"],
+              accept: ["seminar room four", "seminar room 4", "room four", "room 4"],
               why: { vi: "Tom hỏi “in the lecture theatre?” – Dr Grant: “No, in seminar room four”. Lecture theatre là bẫy.", en: "Tom asks “in the lecture theatre?” – Dr Grant: “No, in seminar room four”. The lecture theatre is the distractor." } }
           ] },
 
@@ -246,7 +246,7 @@
               accept: ["soil"],
               why: { vi: "“a filter sheet, which keeps the soil from washing into the drainage layer”.", en: "“a filter sheet, which keeps the soil from washing into the drainage layer”." } },
             { id: "w07-q16", type: "gap", q: "Extensive roofs: low-growing plants such as ___, which store water in thick leaves", limit: { words: 1, number: false },
-              accept: ["sedum"],
+              accept: ["sedum", "sedums"],
               why: { vi: "Giảng viên đánh vần “S-E-D-U-M”. Mái intensive (cỏ, cây bụi) là ý khác.", en: "The lecturer spells it “S-E-D-U-M”. Intensive roofs (grass, shrubs) are a different point." } },
             { id: "w07-q17", type: "gap", q: "Benefit 1: holds back rainwater and releases it ___", limit: { words: 1, number: false },
               accept: ["slowly"],

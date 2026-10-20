@@ -225,7 +225,7 @@
             limit: { words: 1, number: false }, accept: ["vibrate"],
             why: { vi: "Đoạn C: \"phones were switched to vibrate\" (set to = switched to).", en: "Paragraph C: \"phones were switched to vibrate\" (set to = switched to)." } },
           { id: "w06-q14", type: "gap", tag: "summary-box",
-            q: "Summary: Patients could ask for eye masks and ___.",
+            q: "Summary: Patients were offered eye masks and ___.",
             limit: { words: 1, number: false }, accept: ["earplugs", "ear-plugs"],
             why: { vi: "Đoạn C: \"Patients were also offered eye masks and earplugs\".", en: "Paragraph C: \"Patients were also offered eye masks and earplugs\"." } },
           { id: "w06-q15", type: "gap", tag: "summary-box",

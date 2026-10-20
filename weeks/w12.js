@@ -442,11 +442,11 @@
               "Day 1: do the three papers in one session with only short breaks, as you expect on test day; Day 2: Speaking. The real order and schedule are set by the test provider — this mock is only a simulation."),
       sections: [
         // ---------------- DAY 1: LISTENING ----------------
-        { id: "w12-mL", skill: "listening", day: 1, timeLimitMin: 40, readAheadSec: 30, reviewMin: 2,
+        { id: "w12-mL", skill: "listening", day: 1, timeLimitMin: 25, readAheadSec: 30, reviewMin: 2,
           refs: ["w12-l1", "w12-l2", "w12-l3", "w12-l4"],
-          title: B("Ngày 1 – Listening (4 phần, 40 câu)", "Day 1 – Listening (4 parts, 40 questions)"),
-          instructions: B("Mỗi kịch bản phát MỘT lần bằng giọng trình duyệt. Trước mỗi phần có 30 giây đọc câu hỏi; sau phần 4 có 2 phút soát. Không mở transcript trước khi nộp.",
-                          "Each script plays ONCE using the browser's voice. You have 30 seconds to read the questions before each part and 2 minutes to check after Part 4. Do not open the transcripts before submitting."),
+          title: B("Ngày 1 – Listening (4 phần, 40 câu, bản rút gọn khoảng 12 phút nghe)", "Day 1 – Listening (4 parts, 40 questions, shortened version, about 12 minutes of audio)"),
+          instructions: B("Mỗi kịch bản phát MỘT lần bằng giọng trình duyệt. Trước mỗi phần có 30 giây đọc câu hỏi; sau phần 4 có 2 phút soát. Không mở transcript trước khi nộp. Đây là bản rút gọn nên band ước lượng có thể cao hơn thực tế.",
+                          "Each script plays ONCE using the browser's voice. You have 30 seconds to read the questions before each part and 2 minutes to check after Part 4. Do not open the transcripts before submitting. This is a shortened version, so the estimated band may be higher than your real level."),
           groups: [
             { start: "w12-m01", end: "w12-m10", ref: "w12-l1", instructions: B("Phần 1 – Câu 1–10: Hoàn thành phiếu báo mất đồ. Viết MỘT TỪ VÀ/HOẶC MỘT SỐ.", "Part 1 – Questions 1–10: Complete the lost property form. Write ONE WORD AND/OR A NUMBER.") },
             { start: "w12-m11", end: "w12-m14", ref: "w12-l2", instructions: B("Phần 2 – Câu 11–14: Chọn đáp án đúng A, B, C hoặc D.", "Part 2 – Questions 11–14: Choose the correct letter, A, B, C or D.") },

@@ -242,7 +242,7 @@
               accept: ["28", "twenty-eight", "twenty eight"],
               why: { vi: "Giá thường 30 bảng, nhóm từ 10 người được giảm còn “twenty-eight pounds each”.", en: "The normal price is thirty pounds, but groups of ten or more pay “twenty-eight pounds each”." } },
             { id: "w04-q06", type: "gap", q: "Mobile number: ___", limit: { words: 0, number: true },
-              accept: ["07700900418", "07700 900418"],
+              accept: ["07700900418", "07700 900418", "07700 900 418", "07700-900418"],
               why: { vi: "“oh seven seven oh oh, nine oh oh, four one eight” – “oh” = 0 → 07700 900418. Lễ tân đọc lại một lần để bạn kiểm tra.", en: "“oh seven seven oh oh, nine oh oh, four one eight” – “oh” = 0 → 07700 900418. The receptionist reads it back so you can check." } },
             { id: "w04-q07", type: "gap", q: "Address: 6 ___ Road", limit: { words: 2, number: true },
               accept: ["Fenwick"],

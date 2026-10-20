@@ -248,7 +248,7 @@
             { id: "w10-q09", type: "gap", tag: "vocab",
               q: "After falling sharply in 2020, visitor numbers ___ strongly to 560,000 in 2025.",
               limit: { words: 1, number: false },
-              accept: ["rebounded", "recovered"],
+              accept: ["rebounded", "recovered", "rose", "grew", "increased", "climbed", "jumped", "surged"],
               why: B("Tăng trở lại sau khi giảm = rebound/recover; thì quá khứ đơn vì là năm đã qua.", "Increasing again after a fall = rebound/recover; past simple for a past year.") },
             { id: "w10-q10", type: "write", tag: "goals",
               q: B("Viết 3 mục tiêu cải thiện cụ thể, đo được cho tuần 11–12 dựa trên kết quả mock tuần này.",
@@ -350,7 +350,7 @@
             // Passage 1 — notes
             { id: "w10-m07", type: "gap", ref: "w10-p1",
               q: "Government concerns: the route might need permanent ___",
-              limit: { words: 1, number: true }, accept: ["subsidies"],
+              limit: { words: 1, number: true }, accept: ["subsidies", "subsidy"],
               why: B("Đoạn D: 'Officials worried that the route would require permanent subsidies'.", "Paragraph D: 'Officials worried that the route would require permanent subsidies'.") },
             { id: "w10-m08", type: "gap", ref: "w10-p1",
               q: "Carriages bought from a neighbouring country: ___ years old, in good condition",

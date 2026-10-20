@@ -46,7 +46,7 @@
   };
 
   var MODEL_T1_ENERGY =
-    "The table shows the proportion of electricity generated from five sources in Norland, a fictional country, in 2005, 2015 and 2025.\n\n" +
+    "The table shows the proportion of electricity generated from five sources in Norland in 2005, 2015 and 2025.\n\n" +
     "Overall, coal lost its dominant position over the period, while wind and solar power expanded considerably. By 2025, wind had caught up with gas as one of the two largest sources, whereas hydroelectric power had become the least significant.\n\n" +
     "In 2005, coal produced 60% of the country's electricity, far more than any other source. This share fell steadily, to 45% in 2015 and to just 25% in 2025. Hydroelectric power also declined, from 8% to only 3%.\n\n" +
     "By contrast, wind power rose sixfold, from 5% to 30%, so that by 2025 it equalled the figure for gas, which had increased from 25% to 30% in the first decade and then remained stable. Solar energy, although still relatively small, climbed from 2% to 12%. It matched hydroelectric power at 5% in 2015 and was four times larger by the end of the period.";
@@ -258,7 +258,7 @@
         },
         {
           id: "w08-ex10", type: "mcq", tag: "trend-preposition",
-          q: "(Table 1, số liệu minh họa tự soạn) The number of visitors to Park B fell ___ 80,000 between 2005 and 2025.",
+          data: T_PARKS, q: "(Park table, self-written data) The number of visitors to Park B fell ___ 80,000 between 2005 and 2025.",
           opts: ["by", "to", "at", "of"],
           a: 0,
           why: { vi: "Park B giảm từ 300 xuống 220 nghìn, tức giảm 80 nghìn. Giới từ by chỉ mức thay đổi; to chỉ mức đạt được (fell to 220,000).", en: "Park B dropped from 300 to 220 thousand, a fall of 80 thousand. The preposition by marks the amount of change; to marks the level reached (fell to 220,000)." }
@@ -339,7 +339,7 @@
         // --- Bài T1 luyện tập số 1 (bài số 2 là essay ở phần kiểm tra cuối tuần) ---
         {
           id: "w08-ex20", type: "essay", task: "T1", minWords: 150, suggestMin: 20, tag: "task1", data: T_ENERGY,
-          q: "The table shows the percentage of electricity generated from five sources in Norland, a fictional country, in 2005, 2015 and 2025 (illustrative self-written data). Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          q: "The table shows the percentage of electricity generated from five sources in Norland in 2005, 2015 and 2025 (illustrative self-written data). Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
           model: MODEL_T1_ENERGY,
           checklist: [
             { vi: "Mở bài paraphrase tiêu đề, nêu đối tượng, đơn vị (%) và các năm", en: "Introduction paraphrases the title with subject, unit (%) and years" },
