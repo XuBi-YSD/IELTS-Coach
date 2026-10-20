@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IELTS Coach</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2F6BFF">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <img src="icons/icon.svg" alt="" class="logo">
+  <div><h1>IELTS Coach</h1><p class="sub">Mục tiêu band 7.5 · tự học 12 tuần</p></div>
+  <div class="overall" id="overall"></div>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-tab="plan" class="on">Lộ trình</button>
+  <button data-tab="lesson">Bài học</button>
+  <button data-tab="cards">Từ vựng</button>
+  <button data-tab="quiz">Luyện tập</button>
+  <button data-tab="video">Video</button>
+</nav>
+<main id="view"></main>
+<footer>Nội dung là bài luyện tự soạn, không phải đề thi thật và không đảm bảo kết quả. Tiến độ lưu trên trình duyệt của bạn.</footer>
+<script src="data.js"></script>
+<script src="scenes-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F6BFF"/>
+      <stop offset="1" stop-color="#1B2F8F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <!-- whiteboard -->
+  <rect x="164" y="214" width="696" height="500" rx="48" fill="#FFFFFF"/>
+  <rect x="164" y="214" width="696" height="500" rx="48" fill="none" stroke="#C9D3F5" stroke-width="14"/>
+  <!-- board tray + legs -->
+  <rect x="300" y="730" width="424" height="26" rx="13" fill="#C9D3F5"/>
+  <!-- handwritten Aa -->
+  <path d="M258 600 L346 330 L434 600 M286 520 H406" fill="none" stroke="#1B2F8F" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="532" cy="518" r="52" fill="none" stroke="#E53E3E" stroke-width="28"/><path d="M584 452 V600" fill="none" stroke="#E53E3E" stroke-width="28" stroke-linecap="round"/>
+  <!-- underline stroke -->
+  <path d="M240 650 C380 620 520 676 690 640" fill="none" stroke="#2F6BFF" stroke-width="16" stroke-linecap="round"/>
+  <!-- 7.5 badge -->
+  <circle cx="762" cy="296" r="108" fill="#FFC83D"/>
+  <text x="762" y="326" font-family="Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="92" text-anchor="middle" fill="#1B2F8F">7.5</text>
+  <!-- pencil -->
+  <g transform="rotate(38 700 600)">
+    <rect x="676" y="460" width="52" height="220" rx="10" fill="#FFB020"/>
+    <rect x="676" y="460" width="52" height="40" rx="10" fill="#F28B9B"/>
+    <path d="M676 680 L702 740 L728 680 Z" fill="#F7DDB0"/>
+    <path d="M692 716 L702 740 L712 716 Z" fill="#1B2F8F"/>
+  </g>
+</svg>
