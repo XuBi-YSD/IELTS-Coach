@@ -13,8 +13,8 @@
 <body>
 <header class="top">
   <img src="icons/icon.svg" alt="" class="logo">
-  <div><h1>IELTS Coach</h1><p class="sub">Mục tiêu band 7.5 · tự học 12 tuần</p></div>
-  <div class="overall" id="overall"></div>
+  <div><h1>IELTS Coach</h1><p class="sub" id="sub">Mục tiêu band 7.5 · tự học 12 tuần</p></div>
+  <div class="overall"><div class="lang" id="lang" role="group" aria-label="Language"><button data-lang="vi" class="on">VI</button><button data-lang="en">EN</button></div><div id="overall"></div></div>
 </header>
 <nav class="tabs" id="tabs">
   <button data-tab="plan" class="on">Lộ trình</button>
@@ -24,8 +24,9 @@
   <button data-tab="video">Video</button>
 </nav>
 <main id="view"></main>
-<footer>Nội dung là bài luyện tự soạn, không phải đề thi thật và không đảm bảo kết quả. Tiến độ lưu trên trình duyệt của bạn.</footer>
+<footer id="foot">Nội dung là bài luyện tự soạn, không phải đề thi thật và không đảm bảo kết quả. Tiến độ lưu trên trình duyệt của bạn.</footer>
 <script src="data.js"></script>
+<script src="data-en.js"></script>
 <script src="scenes-data.js"></script>
 <script src="app.js"></script>
 </body>

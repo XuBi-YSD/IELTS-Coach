@@ -42,3 +42,4 @@ table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px
 .board em{color:#E53E3E;font-style:normal;border-bottom:3px solid #E53E3E}
 .ctl{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
 .small{font-size:13px;color:var(--mute)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:6px}.lang button{border:0;background:var(--card);color:var(--ink);padding:4px 12px;font:inherit;font-size:13px;cursor:pointer}.lang button.on{background:var(--blue);color:#fff}
