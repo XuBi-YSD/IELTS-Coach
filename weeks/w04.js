@@ -1,0 +1,401 @@
+// weeks/w04.js — Tuần 4: Listening Section 1–2 + Speaking Part 1.
+// Nội dung TỰ SOẠN, không phải đề thi thật. Tên người, địa điểm, số điện thoại, giá tiền đều hư cấu.
+// Số điện thoại dùng dải 07700 900xxx (dải dành cho phim/truyện hư cấu ở Anh).
+// Quy ước TTS: chữ đánh vần viết cách bằng dấu gạch (W-H-I-T-L-O-W); số viết bằng chữ để giọng đọc tự nhiên;
+// đáp án gap/short liệt kê đủ dạng chữ số và dạng chữ trong `accept`.
+(function () {
+  var SELF = { vi: "Tự soạn – không phải đề thi thật", en: "Self-written – not a real exam" };
+
+  // Checklist tự đánh giá Speaking Part 1 (không chấm tự động)
+  var P1_CHECK = [
+    { vi: "FC – Trả lời ngay, 2–3 câu (khoảng 20–30 giây), có lý do hoặc ví dụ; không dừng quá 2 giây.", en: "FC – Answered straight away in 2–3 sentences (about 20–30 seconds) with a reason or example; no pause over 2 seconds." },
+    { vi: "LR – Không lặp nguyên văn câu hỏi; dùng ít nhất 1 cụm từ tự nhiên (collocation, phrasal verb).", en: "LR – Did not repeat the question word for word; used at least one natural phrase (collocation or phrasal verb)." },
+    { vi: "GRA – Đúng thì theo câu hỏi (hiện tại / quá khứ / hiện tại hoàn thành); có ít nhất 1 câu phức (because, although, which…).", en: "GRA – Used the tense the question asks for (present / past / present perfect); at least one complex sentence (because, although, which…)." },
+    { vi: "Pron – Rõ âm cuối và đuôi -s/-ed; nhấn vào từ khoá; xuống giọng ở cuối câu trần thuật.", en: "Pron – Clear final sounds and -s/-ed endings; stressed the key words; falling tone at the end of statements." }
+  ];
+  var P1_WHY = { vi: "Tự ghi âm bằng app ghi âm của máy (app này không ghi âm), nghe lại, tick checklist rồi so với bài mẫu. Bài mẫu dùng một nhân vật giả định – hãy thay bằng thông tin thật của bạn, không học thuộc.",
+                 en: "Record yourself with your device's recorder (this app does not record), listen back, tick the checklist and compare with the model. The model uses an imaginary persona – replace it with your own real details rather than memorising it." };
+
+  // 10 câu hỏi Speaking Part 1 + gợi ý + bài mẫu (nhân vật giả định)
+  var P1 = [
+    { q: "Do you work, or are you a student?",
+      hint: { vi: "Trả lời thẳng + nói rõ công việc/ngành + 1 chi tiết.", en: "Direct answer + job/subject + one detail." },
+      model: "I work, actually. I'm a site engineer for a construction company, so I spend about half of my week outdoors and the rest in the office writing reports." },
+    { q: "What do you like most about your job?",
+      hint: { vi: "Một điều cụ thể + vì sao.", en: "One specific thing + why." },
+      model: "Probably the fact that I can see the results of my work. When a building I've worked on is finished, it's really satisfying, because I know I was part of it." },
+    { q: "Where is your hometown?",
+      hint: { vi: "Tên + vị trí + 1 đặc điểm nổi bật.", en: "Name + location + one feature." },
+      model: "I'm from a small town in the north of Vietnam, about two hours from Hanoi by car. It's surrounded by rice fields, so it's very green and peaceful." },
+    { q: "Has your hometown changed much in recent years?",
+      hint: { vi: "Dùng hiện tại hoàn thành: has become / have opened.", en: "Use the present perfect: has become / have opened." },
+      model: "Yes, quite a lot. A few factories have opened nearby, so the town has become busier, and there are far more cafés than there used to be." },
+    { q: "What do you usually do in your free time?",
+      hint: { vi: "Hoạt động + tần suất + lý do.", en: "Activity + how often + reason." },
+      model: "I usually go running in the evening, maybe three times a week. It helps me unwind after work, and it's the only time I'm not looking at a screen." },
+    { q: "Did you have the same hobbies when you were a child?",
+      hint: { vi: "Quá khứ đơn / used to + so sánh với hiện tại.", en: "Past simple / used to + compare with now." },
+      model: "Not really. As a child I used to spend hours drawing comics, but I gave it up when I started secondary school because I had so much homework." },
+    { q: "How often do you use your phone each day?",
+      hint: { vi: "Ước lượng thật thà + dùng để làm gì.", en: "An honest estimate + what you use it for." },
+      model: "To be honest, far too often. I check it first thing in the morning, and I use it constantly at work for calls and photos of the site." },
+    { q: "Do you prefer to call people or send messages? Why?",
+      hint: { vi: "Chọn một + lý do + ngoại lệ (it depends).", en: "Pick one + reason + an exception (it depends)." },
+      model: "I generally prefer messages, because I can reply when it suits me. But if something is urgent or complicated, I'd rather just pick up the phone." },
+    { q: "What kind of weather do you like best?",
+      hint: { vi: "Loại thời tiết + hoạt động bạn làm khi đó.", en: "Type of weather + what you do in it." },
+      model: "I like cool, dry weather, like autumn in Hanoi. It's perfect for being outside, whereas in summer it's so hot and humid that I just want to stay indoors." },
+    { q: "Do you enjoy cooking?",
+      hint: { vi: "Có/không + món bạn hay nấu hoặc lý do không nấu.", en: "Yes/no + a dish you make, or why you don't cook." },
+      model: "I do, but only at weekends. During the week I'm too tired, so I tend to eat out, but on Sundays I like making a big pot of pho for the family." }
+  ];
+
+  (window.WEEKS = window.WEEKS || {})[4] = {
+    meta: { week: 4, skill: "mixed", skills: ["listening", "speaking"], source: "tự soạn", label: SELF, version: 1, reviewed: false },
+
+    // ---------------- LESSON ----------------
+    lesson: {
+      title: { vi: "Bài tuần 4 – Listening Section 1–2 và Speaking Part 1", en: "Week 4 lesson – Listening Sections 1–2 and Speaking Part 1" },
+      goal: [
+        { vi: "Ghi đúng chính tả tên, số điện thoại, ngày, giờ, giá tiền khi nghe đánh vần và đọc số.", en: "Write names, phone numbers, dates, times and prices correctly when they are spelled out or read aloud." },
+        { vi: "Đoán từ loại và dạng đáp án (số, danh từ số ít/số nhiều, động từ) trước khi nghe.", en: "Predict the word type and form of each answer (number, singular/plural noun, verb) before listening." },
+        { vi: "Nhận ra bẫy thông tin bị sửa lại và bẫy “trước đây – bây giờ”; định vị trên bản đồ bằng từ chỉ hướng.", en: "Spot correction traps and “used to / now” traps; follow directions on a map." },
+        { vi: "Trả lời Speaking Part 1 bằng 2–3 câu có lý do; mục tiêu bài kiểm tra cuối tuần: Listening đúng ≥ 60%.", en: "Answer Speaking Part 1 questions in 2–3 sentences with a reason; end-of-week target: Listening ≥ 60% correct." }
+      ],
+      explain: [
+        { h: { vi: "Section 1 và 2 là gì?", en: "What are Sections 1 and 2?" },
+          vi: "Section 1 là hội thoại đời thường giữa 2 người (đặt chỗ, đăng ký, hỏi thông tin), thường là điền form/ghi chú. Section 2 là độc thoại về chủ đề đời thường (giới thiệu một địa điểm, một sự kiện), hay có câu trắc nghiệm và bản đồ/sơ đồ. Mỗi bản ghi chỉ nghe một lần trong phòng thi. Trong app, chế độ luyện tập cho nghe lại; khi làm bài kiểm tra tuần, hãy thử chỉ nghe một lần.",
+          en: "Section 1 is an everyday conversation between two people (booking, registering, asking for information), usually with form or note completion. Section 2 is a monologue on an everyday topic (introducing a place or an event), often with multiple choice and a map or plan. In the real test each recording is heard once. The app lets you replay in practice mode; for the weekly quiz, try to listen only once." },
+        { h: { vi: "Chính tả tên và số", en: "Spelling names and numbers" },
+          vi: "Người nói thường đánh vần tên riêng; ghi từng chữ, kiểm tra lại cả từ. Chú ý cặp dễ nhầm: 13/30, 14/40, 15/50 (nhấn âm cuối thir-TEEN; nhấn âm đầu THIR-ty). Số điện thoại: “oh” = 0, “double seven” = 77. Giờ: “half past nine” = 9.30, “a quarter to eight” = 7.45. Tên riêng sai một chữ là sai cả câu.",
+          en: "Speakers often spell out names: write each letter, then check the whole word. Watch confusing pairs: 13/30, 14/40, 15/50 (thir-TEEN has stress at the end; THIR-ty at the start). Phone numbers: “oh” = 0, “double seven” = 77. Times: “half past nine” = 9.30, “a quarter to eight” = 7.45. A name with one wrong letter is marked wrong." },
+        { h: { vi: "Đoán từ loại trước khi nghe", en: "Predicting the answer type" },
+          vi: "Trong thời gian đọc câu hỏi, nhìn từ đứng quanh chỗ trống: sau “a/an” là danh từ số ít đếm được; sau “£” là số; sau “must/should” là động từ nguyên mẫu; “every ___ morning” cần một ngày trong tuần. Gạch chân giới hạn từ (ONE WORD ONLY, NO MORE THAN TWO WORDS AND/OR A NUMBER) – viết quá giới hạn là sai.",
+          en: "While reading the questions, look at the words around each gap: after “a/an” you need a singular countable noun; after “£” a number; after “must/should” a base verb; “every ___ morning” needs a day of the week. Underline the word limit (ONE WORD ONLY, NO MORE THAN TWO WORDS AND/OR A NUMBER) – going over the limit is marked wrong." },
+        { h: { vi: "Bẫy thường gặp", en: "Common traps" },
+          vi: "(1) Sửa lại: “Twelve. Oh, sorry, actually fourteen” → đáp án là 14. (2) Từ chối: “The fourteenth is fully booked” → không phải 14. (3) Trước đây/bây giờ: “used to be on Tuesdays, but now…” → chọn thông tin hiện tại. (4) Nhắc tới nhưng không phải đáp án: các lựa chọn MCQ thường đều được nói đến; chỉ một lựa chọn trả lời đúng câu hỏi.",
+          en: "(1) Correction: “Twelve. Oh, sorry, actually fourteen” → the answer is 14. (2) Rejection: “The fourteenth is fully booked” → not 14. (3) Past vs now: “used to be on Tuesdays, but now…” → choose the current information. (4) Mentioned but wrong: in MCQ most options are mentioned; only one actually answers the question." },
+        { h: { vi: "Bản đồ / sơ đồ", en: "Maps and plans" },
+          vi: "Xác định điểm bắt đầu (“We're standing at the main gate”) và hướng (north/south…). Từ khoá vị trí: immediately on your right, opposite, next to, beyond, in the north-east corner, on the north side of. Khi người nói dùng “used to be… but now”, vị trí cũ là bẫy.",
+          en: "Find the starting point (“We're standing at the main gate”) and the compass directions. Key position language: immediately on your right, opposite, next to, beyond, in the north-east corner, on the north side of. When the speaker says “used to be… but now”, the old position is a trap." },
+        { h: { vi: "Speaking Part 1: khung A-R-E", en: "Speaking Part 1: the A-R-E frame" },
+          vi: "Part 1 kéo dài khoảng 4–5 phút, giám khảo hỏi về bạn và chủ đề quen thuộc. Mỗi câu trả lời 2–3 câu theo khung A-R-E: Answer (trả lời thẳng) – Reason (lý do) – Extra (ví dụ, so sánh, ngoại lệ). Không trả lời một từ, cũng không nói quá dài như Part 2. Dùng đúng thì của câu hỏi.",
+          en: "Part 1 lasts about 4–5 minutes; the examiner asks about you and familiar topics. Answer each question in 2–3 sentences using A-R-E: Answer (direct) – Reason – Extra (example, comparison or exception). Avoid one-word answers, but don't speak for as long as in Part 2. Use the tense of the question." }
+      ],
+      table: [
+        { h: { vi: "Đọc số và chữ thường gặp", en: "Common ways numbers and letters are read" },
+          rows: [
+            ["oh seven seven oh oh", "07700"],
+            ["double R", "RR"],
+            ["half past nine / nine thirty", "9.30"],
+            ["a quarter to eight", "7.45"],
+            ["the twenty-first of November", "21 November / 21st November"],
+            ["twenty-eight pounds", "£28"],
+            ["fifteen (fif-TEEN) vs fifty (FIF-ty)", "15 vs 50"]
+          ] }
+      ],
+      vocab: [
+        { w: "surname", pos: "n", ipa: "/ˈsɜːneɪm/", vi: "họ", en: "the family name", ex: "Could you spell your surname, please?", col: "spell / give your surname" },
+        { w: "reservation", pos: "n", ipa: "/ˌrezəˈveɪʃn/", vi: "sự đặt chỗ", en: "an arrangement to keep a place, table or ticket for you", ex: "I'd like to make a reservation for Saturday.", col: "make / cancel / confirm a reservation" },
+        { w: "deposit", pos: "n", ipa: "/dɪˈpɒzɪt/", vi: "tiền đặt cọc", en: "money paid in advance to secure a booking", ex: "You'll need to pay a small deposit.", col: "pay / refund a deposit" },
+        { w: "available", pos: "adj", ipa: "/əˈveɪləbl/", vi: "còn trống, sẵn có", en: "free to be used or booked", ex: "The next available date is the twenty-first.", col: "available date / seats" },
+        { w: "fully booked", pos: "phr", ipa: "/ˌfʊli ˈbʊkt/", vi: "kín chỗ", en: "with no places left", ex: "I'm afraid that session is fully booked.", col: "be fully booked" },
+        { w: "confirm", pos: "v", ipa: "/kənˈfɜːm/", vi: "xác nhận", en: "to say that something is definitely true or arranged", ex: "Two more friends confirmed this morning.", col: "confirm a booking / the details" },
+        { w: "in advance", pos: "phr", ipa: "/ɪn ədˈvɑːns/", vi: "trước (thời hạn)", en: "before the time something happens", ex: "Please book at least a week in advance.", col: "pay / book in advance" },
+        { w: "discount", pos: "n", ipa: "/ˈdɪskaʊnt/", vi: "giảm giá", en: "a reduction in the usual price", ex: "Groups of ten or more get a discount.", col: "get / offer a discount" },
+        { w: "vegetarian", pos: "adj", ipa: "/ˌvedʒəˈteəriən/", vi: "ăn chay (không ăn thịt cá)", en: "not eating meat or fish", ex: "Two of my friends need a vegetarian lunch.", col: "vegetarian meal / option" },
+        { w: "permit holder", pos: "n", ipa: "/ˈpɜːmɪt ˌhəʊldə/", vi: "người có giấy phép", en: "a person who has official permission, e.g. to park", ex: "That car park is for permit holders only.", col: "permit holders only" },
+        { w: "volunteer", pos: "n", ipa: "/ˌvɒlənˈtɪə/", vi: "tình nguyện viên", en: "a person who works without being paid", ex: "The park relies on volunteers.", col: "volunteer team / work as a volunteer" },
+        { w: "coordinate", pos: "v", ipa: "/kəʊˈɔːdɪneɪt/", vi: "điều phối", en: "to organise people or activities so they work together", ex: "Sam coordinates the volunteer team.", col: "coordinate a team / an event" },
+        { w: "sign out", pos: "phr v", ipa: "/saɪn ˈaʊt/", vi: "ký mượn (ghi sổ khi lấy đồ ra)", en: "to record that you have taken something", ex: "Every tool must be signed out in the book.", col: "sign out equipment" },
+        { w: "opposite", pos: "prep", ipa: "/ˈɒpəzɪt/", vi: "đối diện", en: "on the other side, facing something", ex: "The café is opposite the visitor centre.", col: "directly opposite" },
+        { w: "beyond", pos: "prep", ipa: "/bɪˈjɒnd/", vi: "ở phía bên kia, xa hơn", en: "on the far side of something", ex: "The beehives are beyond the orchard.", col: "just beyond" },
+        { w: "entrance", pos: "n", ipa: "/ˈentrəns/", vi: "lối vào", en: "a door or gate where you go in", ex: "Meet me at the main entrance.", col: "main / side entrance" },
+        { w: "unwind", pos: "v", ipa: "/ʌnˈwaɪnd/", vi: "thư giãn", en: "to relax after work or stress", ex: "Running helps me unwind after work.", col: "unwind after a long day" },
+        { w: "to be honest", pos: "phr", ipa: "/tə bi ˈɒnɪst/", vi: "thật lòng mà nói", en: "used before saying what you really think", ex: "To be honest, I check my phone far too often.", col: "—" },
+        { w: "used to", pos: "phr", ipa: "/ˈjuːst tə/", vi: "đã từng (nay không còn)", en: "used for past habits or states that are no longer true", ex: "I used to spend hours drawing comics.", col: "used to + base verb" },
+        { w: "it depends", pos: "phr", ipa: "/ɪt dɪˈpendz/", vi: "còn tuỳ", en: "the answer changes with the situation", ex: "It depends on how urgent it is.", col: "it depends on + noun" }
+      ],
+      examples: [
+        { label: { vi: "Part 1 – câu trả lời quá ngắn", en: "Part 1 – answer that is too short" },
+          text: "Examiner: Do you enjoy cooking?\nCandidate: Yes.",
+          note: { vi: "Trả lời một từ: giám khảo không có gì để đánh giá Fluency hay Lexical Resource.", en: "A one-word answer gives the examiner nothing to assess for fluency or vocabulary." }, speak: true },
+        { label: { vi: "Part 1 – theo khung A-R-E", en: "Part 1 – using A-R-E" },
+          text: "Examiner: Do you enjoy cooking?\nCandidate: I do, but only at weekends. During the week I'm too tired, so I tend to eat out, but on Sundays I like making a big pot of pho for the family.",
+          note: { vi: "Answer (I do) – Reason (too tired on weekdays) – Extra (Sunday pho). Dài khoảng 20 giây.", en: "Answer (I do) – Reason (too tired on weekdays) – Extra (Sunday pho). About 20 seconds." }, speak: true },
+        { label: { vi: "Bẫy sửa thông tin", en: "Correction trap" },
+          text: "How many people? – Twelve. Oh, sorry, actually it's fourteen now.",
+          note: { vi: "Đáp án là thông tin cuối cùng: 14.", en: "The answer is the final information: 14." }, speak: true }
+      ],
+      mistakes: [
+        { vi: "Nghe “fifty” nhưng viết 15 (hoặc ngược lại) vì không chú ý trọng âm.", en: "Hearing “fifty” but writing 15 (or the reverse) by ignoring word stress." },
+        { vi: "Viết tên theo cách đọc tiếng Việt, bỏ chữ cái khi người nói đánh vần nhanh.", en: "Writing a name the way it sounds in Vietnamese, or dropping letters when it is spelled quickly." },
+        { vi: "Ghi thông tin đầu tiên nghe được, không chờ câu sửa lại.", en: "Writing the first thing heard instead of waiting for a correction." },
+        { vi: "Thiếu -s khi đáp án là danh từ số nhiều (clothes, bottles) hoặc viết quá giới hạn từ.", en: "Missing -s on plural answers (clothes, bottles) or going over the word limit." },
+        { vi: "Part 1: trả lời “Yes/No” rồi dừng, hoặc học thuộc câu dài nghe như đọc.", en: "Part 1: saying only “Yes/No”, or reciting a long memorised answer that sounds read." }
+      ],
+      exercises: [
+        { id: "w04-ex01", type: "gap", ref: "w04-l0",
+          q: "Surname of the guest: ___",
+          limit: { words: 1, number: false },
+          accept: ["Pemberton"],
+          why: { vi: "Script câu 1: “P-E-M-B-E-R-T-O-N”. Chú ý chữ M (không phải N) ở vị trí thứ 3.", en: "Script line 1: “P-E-M-B-E-R-T-O-N”. Note the third letter is M, not N." } },
+        { id: "w04-ex02", type: "gap", ref: "w04-l0",
+          q: "Meeting room: £___ per hour",
+          limit: { words: 1, number: true },
+          accept: ["15", "fifteen"],
+          why: { vi: "Script câu 2: “fifteen pounds an hour. Not fifty, fifteen.” Nghe trọng âm ở cuối fif-TEEN.", en: "Script line 2: “fifteen pounds an hour. Not fifty, fifteen.” Listen for the stress at the end: fif-TEEN." } },
+        { id: "w04-ex03", type: "gap", ref: "w04-l0",
+          q: "Last bus: ___ p.m.",
+          limit: { words: 1, number: true },
+          accept: ["7.45", "7:45", "19.45", "19:45"],
+          why: { vi: "Script câu 3: “a quarter to eight” = 7.45 (kém 15 phút đến 8 giờ), không phải 8.15.", en: "Script line 3: “a quarter to eight” = 7.45 (fifteen minutes before eight), not 8.15." } },
+        { id: "w04-ex04", type: "gap", ref: "w04-l0",
+          q: "Course start date: ___ June",
+          limit: { words: 1, number: true },
+          accept: ["3", "3rd", "third"],
+          why: { vi: "Script câu 4: “the third of June”. Viết 3 hoặc 3rd đều được.", en: "Script line 4: “the third of June”. Both 3 and 3rd are acceptable." } },
+        { id: "w04-ex05", type: "gap", ref: "w04-l0",
+          q: "Booking reference: ___",
+          limit: { words: 1, number: true },
+          accept: ["H442", "H 442"],
+          why: { vi: "Script câu 5: “H, four, four, two” → H442. Mã gồm cả chữ và số được tính là một “number”.", en: "Script line 5: “H, four, four, two” → H442. A code with letters and digits counts as a number." } },
+        { id: "w04-ex06", type: "gap", ref: "w04-l0",
+          q: "Hotel address: ___ Street",
+          limit: { words: 1, number: false },
+          accept: ["Kingsley"],
+          why: { vi: "Script câu 6: “K-I-N-G-S-L-E-Y”. Viết hoa chữ đầu không bắt buộc (app không phân biệt hoa/thường).", en: "Script line 6: “K-I-N-G-S-L-E-Y”. Capital letters do not matter (the app ignores case)." } },
+        { id: "w04-ex07", type: "mcq",
+          q: { vi: "Chỗ trống: “Cost: £___ per night”. Bạn đoán cần điền loại gì?", en: "Gap: “Cost: £___ per night”. What type of answer do you expect?" },
+          opts: ["a number", "a person's name", "an adjective", "a verb"],
+          a: 0,
+          why: { vi: "Sau ký hiệu £ luôn là một con số.", en: "The £ sign is always followed by a number." } },
+        { id: "w04-ex08", type: "mcq",
+          q: { vi: "Chỗ trống: “Please bring a ___ to the first lesson.” Loại từ cần điền?", en: "Gap: “Please bring a ___ to the first lesson.” What type of word is needed?" },
+          opts: ["a plural noun", "a singular countable noun", "a verb ending in -ing", "a number"],
+          a: 1,
+          why: { vi: "Mạo từ “a” đứng trước → danh từ số ít đếm được (vd notebook, towel).", en: "The article “a” comes before the gap → a singular countable noun (e.g. notebook, towel)." } },
+        { id: "w04-ex09", type: "mcq",
+          q: { vi: "Chỗ trống: “Guests must ___ their tickets at reception.” Loại từ cần điền?", en: "Gap: “Guests must ___ their tickets at reception.” What type of word is needed?" },
+          opts: ["a base verb", "a past participle", "a noun", "an adverb"],
+          a: 0,
+          why: { vi: "Sau động từ khuyết thiếu “must” là động từ nguyên mẫu (vd collect, show).", en: "A modal verb like “must” is followed by a base verb (e.g. collect, show)." } },
+        { id: "w04-ex10", type: "mcq", ref: "w04-l0",
+          q: { vi: "Nghe câu 7 của script. Câu lạc bộ hiện họp vào ngày nào?", en: "Listen to line 7 of the script. On which day does the club meet now?" },
+          opts: ["Tuesday", "Thursday", "Saturday"],
+          a: 1,
+          why: { vi: "“We used to meet on Tuesdays, but now it's Thursdays.” Tuesday là thông tin cũ (bẫy used to).", en: "“We used to meet on Tuesdays, but now it's Thursdays.” Tuesday is old information (the used to trap)." } },
+        { id: "w04-ex11", type: "order", scoreEach: false,
+          q: { vi: "Gán nhãn A-R-E cho từng câu trong câu trả lời Part 1: “Do you like your hometown?”", en: "Label each sentence of this Part 1 answer with A-R-E: “Do you like your hometown?”" },
+          items: ["It's quiet and everyone knows each other.",
+                  "Yes, I really do.",
+                  "Whenever I go back for Tet, it feels like nothing has changed, which I find comforting."],
+          labels: ["Answer", "Reason", "Extra"],
+          a: ["Reason", "Answer", "Extra"],
+          why: { vi: "Câu trả lời thẳng (Yes, I really do) → lý do (quiet, everyone knows each other) → thêm ví dụ/cảm xúc (về quê dịp Tết).", en: "Direct answer (Yes, I really do) → reason (quiet, everyone knows each other) → extra example/feeling (going back for Tet)." } },
+        { id: "w04-ex12", type: "write",
+          q: { vi: "Mở rộng câu trả lời một từ thành 2–3 câu theo A-R-E. Câu hỏi: “Do you like music?” – “Yes.”", en: "Expand this one-word answer into 2–3 sentences using A-R-E. Question: “Do you like music?” – “Yes.”" },
+          model: "Yes, I'm a big fan. I listen to music almost every time I drive, because it makes the traffic far less stressful. Lately I've been getting into old Vietnamese songs that my parents used to play.",
+          checklist: [
+            { vi: "Có câu trả lời thẳng ở đầu", en: "Starts with a direct answer" },
+            { vi: "Có lý do (because / so / since)", en: "Gives a reason (because / so / since)" },
+            { vi: "Có thêm ví dụ hoặc so sánh", en: "Adds an example or comparison" },
+            { vi: "2–3 câu, không quá dài", en: "2–3 sentences, not too long" }
+          ],
+          why: { vi: "Bài mẫu chỉ tham khảo; câu trả lời của bạn đạt nếu đủ checklist.", en: "The model is for reference only; your answer is fine if it meets the checklist." } }
+      ],
+      summary: [
+        { vi: "Section 1 = hội thoại đời thường (form), Section 2 = độc thoại đời thường (MCQ, bản đồ). Thi thật nghe 1 lần.", en: "Section 1 = everyday conversation (forms); Section 2 = everyday monologue (MCQ, maps). The real test is heard once." },
+        { vi: "Trước khi nghe: đoán từ loại, gạch chân giới hạn từ.", en: "Before listening: predict the word type and underline the word limit." },
+        { vi: "Chờ thông tin cuối cùng: cẩn thận câu sửa lại, từ chối và “used to… but now”.", en: "Wait for the final information: watch for corrections, rejections and “used to… but now”." },
+        { vi: "Chính tả tên và số phải chính xác từng ký tự.", en: "Names and numbers must be correct to the last character." },
+        { vi: "Part 1: Answer – Reason – Extra, 2–3 câu, đúng thì.", en: "Part 1: Answer – Reason – Extra, 2–3 sentences, correct tense." }
+      ]
+    },
+
+    // ---------------- QUIZ ----------------
+    quiz: {
+      title: { vi: "Kiểm tra tuần 4 – Listening Section 1–2 + Speaking Part 1", en: "Week 4 quiz – Listening Sections 1–2 + Speaking Part 1" },
+      passPct: 60,
+      note: { vi: "Mục tiêu: Listening đúng ≥ 60% (12/20 điểm tự chấm). Phần Speaking không tính vào điểm tự động – tự đánh giá bằng checklist. Nội dung tự soạn, không phải đề thi thật.",
+              en: "Target: Listening ≥ 60% correct (12 of 20 auto-marked points). Speaking is not auto-marked – assess yourself with the checklist. Self-written content, not a real exam." },
+      timeLimitMin: null,
+      sections: [
+        { id: "w04-s1", skill: "listening",
+          title: { vi: "Listening Section 1 – Đặt chỗ lớp làm gốm (câu 1–10)", en: "Listening Section 1 – Booking a pottery workshop (Questions 1–10)" },
+          instructions: { vi: "Hoàn thành form. Viết KHÔNG QUÁ HAI TỪ VÀ/HOẶC MỘT SỐ cho mỗi câu. Đọc form trước khi bấm Nghe.", en: "Complete the form. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Read the form before you press Play." },
+          ref: "w04-l1",
+          questions: [
+            { id: "w04-q01", type: "gap", q: "Name: Daniel ___", limit: { words: 2, number: true },
+              accept: ["Whitlow"],
+              why: { vi: "Daniel đánh vần “W-H-I-T-L-O-W”. Tên riêng phải đúng từng chữ.", en: "Daniel spells it “W-H-I-T-L-O-W”. Names must be spelled exactly." } },
+            { id: "w04-q02", type: "gap", q: "Number of people: ___", limit: { words: 2, number: true },
+              accept: ["14", "fourteen"],
+              why: { vi: "Lúc đầu nói “Twelve”, sau sửa “actually it's fourteen now” → bẫy sửa thông tin.", en: "He first says “Twelve”, then corrects it: “actually it's fourteen now” – a correction trap." } },
+            { id: "w04-q03", type: "gap", q: "Date: Saturday ___ November", limit: { words: 2, number: true },
+              accept: ["21", "21st", "twenty-first", "twenty first"],
+              why: { vi: "Ngày 14 đã kín chỗ (“the fourteenth is fully booked”); ngày trống tiếp theo là “Saturday the twenty-first”.", en: "The 14th is rejected (“the fourteenth is fully booked”); the next free date is “Saturday the twenty-first”." } },
+            { id: "w04-q04", type: "gap", q: "Workshop starts at: ___ a.m.", limit: { words: 2, number: true },
+              accept: ["9.30", "9:30", "nine thirty"],
+              why: { vi: "“The doors open at a quarter past nine” (9.15) là bẫy; “the workshop itself starts at half past nine” = 9.30. Viết “half past nine” là 3 từ, vượt giới hạn.", en: "“The doors open at a quarter past nine” (9.15) is a distractor; “the workshop itself starts at half past nine” = 9.30. “half past nine” is three words, over the limit." } },
+            { id: "w04-q05", type: "gap", q: "Price per person: £___", limit: { words: 2, number: true },
+              accept: ["28", "twenty-eight", "twenty eight"],
+              why: { vi: "Giá thường 30 bảng, nhóm từ 10 người được giảm còn “twenty-eight pounds each”.", en: "The normal price is thirty pounds, but groups of ten or more pay “twenty-eight pounds each”." } },
+            { id: "w04-q06", type: "gap", q: "Mobile number: ___", limit: { words: 0, number: true },
+              accept: ["07700900418", "07700 900418"],
+              why: { vi: "“oh seven seven oh oh, nine oh oh, four one eight” – “oh” = 0 → 07700 900418. Lễ tân đọc lại một lần để bạn kiểm tra.", en: "“oh seven seven oh oh, nine oh oh, four one eight” – “oh” = 0 → 07700 900418. The receptionist reads it back so you can check." } },
+            { id: "w04-q07", type: "gap", q: "Address: 6 ___ Road", limit: { words: 2, number: true },
+              accept: ["Fenwick"],
+              why: { vi: "“Number six, Fenwick Road. That's F-E-N-W-I-C-K.”", en: "“Number six, Fenwick Road. That's F-E-N-W-I-C-K.”" } },
+            { id: "w04-q08", type: "gap", q: "Guests should wear: ___", limit: { words: 2, number: true },
+              accept: ["old clothes"],
+              why: { vi: "“Please wear old clothes. The clay gets everywhere.” Chỉ viết “clothes” là thiếu ý “old”.", en: "“Please wear old clothes. The clay gets everywhere.” Writing only “clothes” misses the key word “old”." } },
+            { id: "w04-q09", type: "gap", q: "Parking: free car park behind the ___", limit: { words: 2, number: true },
+              accept: ["library"],
+              why: { vi: "Bãi xe gần ga chỉ dành cho người có giấy phép (bẫy); bãi miễn phí ở “behind the library”.", en: "The car park by the station is for permit holders only (distractor); the free one is “behind the library”." } },
+            { id: "w04-q10", type: "gap", q: "Lunch: two ___ meals", limit: { words: 2, number: true },
+              accept: ["vegetarian"],
+              why: { vi: "Lễ tân hỏi “vegan, or vegetarian?” – Daniel trả lời “Vegetarian”. “vegan” là bẫy.", en: "The receptionist asks “vegan, or vegetarian?” and Daniel answers “Vegetarian”. “vegan” is the distractor." } }
+          ] },
+
+        { id: "w04-s2", skill: "listening",
+          title: { vi: "Listening Section 2 – Công viên cộng đồng Marsh Lane (câu 11–20)", en: "Listening Section 2 – Marsh Lane Community Park (Questions 11–20)" },
+          instructions: { vi: "Câu 11–13: chọn A, B hoặc C. Câu 14–17: ghép mỗi địa điểm với vị trí đúng trên sơ đồ (mô tả bằng chữ). Câu 18–20: viết KHÔNG QUÁ BA TỪ VÀ/HOẶC MỘT SỐ.",
+                          en: "Questions 11–13: choose A, B or C. Questions 14–17: match each place with its position on the plan (described in words). Questions 18–20: write NO MORE THAN THREE WORDS AND/OR A NUMBER." },
+          ref: "w04-l2",
+          plan: { vi: "Sơ đồ (mô tả bằng chữ): Cổng chính ở phía nam. Một lối đi chạy thẳng về phía bắc tới hồ nước ở giữa công viên. Vườn cây ăn quả ở phía tây bắc.",
+                  en: "Plan (described in words): The main gate is on the south side. A path runs straight north from the gate to a pond in the middle of the park. There is an orchard in the north-west." },
+          questions: [
+            { id: "w04-q11", type: "mcq", q: "Before it became a park, the land was",
+              opts: ["a farm.", "a railway goods yard.", "a factory site."], a: 1,
+              why: { vi: "“A lot of visitors assume this land used to be a farm… In fact… it was a railway goods yard.” “farm” là điều người ta tưởng (bẫy).", en: "“A lot of visitors assume this land used to be a farm… In fact… it was a railway goods yard.” “farm” is what people wrongly assume." } },
+            { id: "w04-q12", type: "mcq", q: "What will the new volunteers mainly do today?",
+              opts: ["plant trees", "clear the paths", "count birds"], a: 1,
+              why: { vi: "Trồng cây để mùa xuân, đếm chim do nhóm chuyên môn làm; “Today you'll mainly be clearing the paths”.", en: "Planting happens in spring and the bird count is done by a specialist group; “Today you'll mainly be clearing the paths”." } },
+            { id: "w04-q13", type: "mcq", q: "What does Sam say about tools?",
+              opts: ["Volunteers should bring their own.", "They must be signed out and signed back in.", "They may be taken home overnight."], a: 1,
+              why: { vi: "“You don't need to bring your own… every tool must be signed out in the book and signed back in… Please don't take any tools home.”", en: "“You don't need to bring your own… every tool must be signed out in the book and signed back in… Please don't take any tools home.”" } },
+            { id: "w04-q14", type: "matching", kind: "feature", tag: "map", scoreEach: true, reuse: false,
+              q: "Questions 14–17. Where are these places? Choose the correct position, A–F.",
+              items: ["14. tool shed", "15. café", "16. first-aid point", "17. beehives"],
+              options: ["A. to the left (west) of the main gate", "B. just inside the main gate, on the right", "C. on the north side of the pond",
+                        "D. in the north-east corner", "E. in the north-west corner, beyond the orchard", "F. on the south side of the pond"],
+              a: [1, 2, 3, 4],
+              why: { vi: "Tool shed: “immediately on your right” khi vào cổng (B). Café: “on the north side of the pond” (C). First-aid: trong visitor centre “in the north-east corner” (D). Beehives: “in the north-west corner, beyond the orchard” (E). A là vị trí cũ của nhà vệ sinh (bẫy “used to be”); F không được nhắc.",
+                     en: "Tool shed: “immediately on your right” as you come in (B). Café: “on the north side of the pond” (C). First aid: in the visitor centre “in the north-east corner” (D). Beehives: “in the north-west corner, beyond the orchard” (E). A is where the toilets used to be (a “used to be” trap); F is not mentioned." } },
+            { id: "w04-q18", type: "gap", q: "Volunteer sessions: every ___ morning, 9 a.m. to 12 noon", limit: { words: 3, number: true },
+              accept: ["Wednesday"],
+              why: { vi: "“used to be on Tuesday mornings, but we've moved them to Wednesday mornings”.", en: "“used to be on Tuesday mornings, but we've moved them to Wednesday mornings”." } },
+            { id: "w04-q19", type: "gap", q: "Minimum age for volunteers: ___", limit: { words: 3, number: true },
+              accept: ["16", "sixteen", "16 years", "sixteen years", "16 years old", "sixteen years old"],
+              why: { vi: "“Volunteers need to be at least sixteen years old.”", en: "“Volunteers need to be at least sixteen years old.”" } },
+            { id: "w04-q20", type: "short", q: "What should volunteers always bring?", limit: { words: 3, number: true },
+              accept: ["water bottle", "a water bottle"],
+              why: { vi: "“please always bring a water bottle” – có vòi nước ở café để rót lại.", en: "“please always bring a water bottle” – there is a tap at the café to refill it." } }
+          ] },
+
+        { id: "w04-s3", skill: "speaking",
+          title: { vi: "Speaking Part 1 – 10 câu (tự đánh giá)", en: "Speaking Part 1 – 10 questions (self-assessed)" },
+          instructions: { vi: "Bấm Nghe để giọng trình duyệt đọc câu hỏi. Trả lời to 20–30 giây cho mỗi câu, tự ghi âm bằng máy, rồi tick checklist. Không chấm tự động.",
+                          en: "Press Play to hear each question in the browser voice. Answer aloud for 20–30 seconds, record yourself on your device, then tick the checklist. Not auto-marked." },
+          ref: "w04-s1",
+          questions: P1.map(function (p, i) {
+            var n = i + 21;
+            return { id: "w04-q" + n, type: "speak", part: 1, prepSec: 0, talkSec: 30,
+                     q: p.q, hint: p.hint, model: p.model, modelRef: "w04-s1m", modelLine: i * 2 + 1, // w04-s1m xen kẽ E/C → câu trả lời ở dòng 2i+1
+                     checklist: P1_CHECK, criteria: ["FC", "LR", "GRA", "P"], why: P1_WHY };
+          }) }
+      ]
+    },
+
+    passages: [],
+
+    // ---------------- SCRIPTS (đọc bằng speechSynthesis) ----------------
+    scripts: [
+      { id: "w04-l0", kind: "listening", part: 1, lang: "en-GB", rate: 0.9, pauseMs: 900,
+        title: { vi: "Luyện chính tả số và tên (bài tập)", en: "Numbers and names practice (exercises)" },
+        speakers: [{ id: "A", name: "Speaker", voice: "female" }],
+        lines: [
+          { sp: "A", text: "One. The guest's surname is Pemberton. That's P-E-M-B-E-R-T-O-N." },
+          { sp: "A", text: "Two. The meeting room costs fifteen pounds an hour. Not fifty, fifteen." },
+          { sp: "A", text: "Three. The last bus leaves at a quarter to eight in the evening." },
+          { sp: "A", text: "Four. The course starts on the third of June." },
+          { sp: "A", text: "Five. Your booking reference is H, four, four, two." },
+          { sp: "A", text: "Six. The hotel is on Kingsley Street. K-I-N-G-S-L-E-Y." },
+          { sp: "A", text: "Seven. We used to meet on Tuesdays, but now it's Thursdays." }
+        ],
+        transcript: "hidden", maxPlays: null, source: "tự soạn" },
+
+      { id: "w04-l1", kind: "listening", part: 1, lang: "en-GB", rate: 0.95, pauseMs: 600,
+        title: { vi: "Section 1 – Đặt lớp làm gốm", en: "Section 1 – Booking a pottery workshop" },
+        speakers: [{ id: "A", name: "Jenny (receptionist)", voice: "female" }, { id: "B", name: "Daniel (caller)", voice: "male" }],
+        lines: [
+          { sp: "A", text: "Good morning, Hollybank Pottery Studio. Jenny speaking. How can I help?" },
+          { sp: "B", text: "Hi. I'd like to book one of your Saturday workshops for a group of friends." },
+          { sp: "A", text: "Of course. Can I take your name first?" },
+          { sp: "B", text: "Yes, it's Daniel Whitlow." },
+          { sp: "A", text: "Could you spell the surname for me, please?" },
+          { sp: "B", text: "Sure. W-H-I-T-L-O-W." },
+          { sp: "A", text: "Thank you. And how many people will there be in the group?" },
+          { sp: "B", text: "Twelve. Oh, sorry, actually it's fourteen now. Two more friends confirmed this morning." },
+          { sp: "A", text: "Fourteen, that's fine. The room holds up to twenty. Which Saturday were you thinking of?" },
+          { sp: "B", text: "We were hoping for the fourteenth of November." },
+          { sp: "A", text: "I'm afraid the fourteenth is fully booked. The next free date is Saturday the twenty-first." },
+          { sp: "B", text: "The twenty-first of November is fine. What time does it start?" },
+          { sp: "A", text: "The doors open at a quarter past nine, and the workshop itself starts at half past nine. It finishes at about one o'clock." },
+          { sp: "B", text: "Great. And how much is it per person?" },
+          { sp: "A", text: "The normal price is thirty pounds, but groups of ten or more get a discount, so it's twenty-eight pounds each." },
+          { sp: "B", text: "Twenty-eight. Lovely. Do you need a contact number?" },
+          { sp: "A", text: "Yes, please. A mobile is best." },
+          { sp: "B", text: "It's oh seven seven oh oh, nine oh oh, four one eight." },
+          { sp: "A", text: "Let me read that back. Oh seven seven oh oh, nine oh oh, four one eight." },
+          { sp: "B", text: "That's right." },
+          { sp: "A", text: "And a postal address, for the receipt?" },
+          { sp: "B", text: "Number six, Fenwick Road. That's F-E-N-W-I-C-K." },
+          { sp: "A", text: "Six Fenwick Road. Got it. Now, a few practical things. Please wear old clothes. The clay gets everywhere, and the aprons don't cover much." },
+          { sp: "B", text: "Old clothes. I'll tell everyone. Is there parking nearby?" },
+          { sp: "A", text: "Don't use the car park by the station. That one is for permit holders only. There's a free car park behind the library, just two minutes' walk away." },
+          { sp: "B", text: "Behind the library. Perfect. One last thing. We'd like to stay for lunch afterwards, and two of my friends don't eat meat." },
+          { sp: "A", text: "No problem. Are they vegan, or vegetarian?" },
+          { sp: "B", text: "Vegetarian. They both eat cheese and eggs." },
+          { sp: "A", text: "Then I'll note down two vegetarian lunches. Is there anything else?" },
+          { sp: "B", text: "No, that's everything. Thanks very much." }
+        ],
+        transcript: "hidden", maxPlays: null, source: "tự soạn" },
+
+      { id: "w04-l2", kind: "listening", part: 2, lang: "en-GB", rate: 0.95, pauseMs: 700,
+        title: { vi: "Section 2 – Công viên cộng đồng Marsh Lane", en: "Section 2 – Marsh Lane Community Park" },
+        speakers: [{ id: "A", name: "Sam (volunteer coordinator)", voice: "male" }],
+        lines: [
+          { sp: "A", text: "Hello everyone, and welcome to Marsh Lane Community Park. My name's Sam, and I coordinate the volunteer team. Before we start work, I'll tell you a bit about the park, show you where things are, and explain how volunteering works." },
+          { sp: "A", text: "First, a little history. A lot of visitors assume this land used to be a farm, because of the old orchard. In fact, for most of the last century, it was a railway goods yard. When the yard closed, local residents campaigned to turn it into a park, and the orchard was planted much later." },
+          { sp: "A", text: "Now, what will you be doing today? You won't be planting anything yet. Planting happens in the spring. And the bird count is done by a specialist group. Today you'll mainly be clearing the paths, cutting back branches and picking up litter, so that visitors can walk safely." },
+          { sp: "A", text: "About tools. You don't need to bring your own. All the tools are kept in the tool shed, and every tool must be signed out in the book and signed back in at the end of the day. Please don't take any tools home, even if you're coming back tomorrow." },
+          { sp: "A", text: "Right, let's look at the plan of the park. We're standing at the main gate, on the south side. As you come in through the gate, the tool shed is the small green building immediately on your right." },
+          { sp: "A", text: "The path from the gate leads straight north to the pond in the middle of the park. The café is on the north side of the pond, so you'll need to walk round the water to reach it." },
+          { sp: "A", text: "The toilets used to be to the left of the main gate, but they've been moved, and they're now right next to the café." },
+          { sp: "A", text: "If anyone gets hurt, the first-aid point is inside the visitor centre, which is in the north-east corner of the park." },
+          { sp: "A", text: "And finally, in the north-west corner, beyond the orchard, you'll find the beehives. Please don't go near them without a supervisor." },
+          { sp: "A", text: "Just a few more details. Our regular volunteer sessions used to be on Tuesday mornings, but we've moved them to Wednesday mornings, from nine until twelve." },
+          { sp: "A", text: "Volunteers need to be at least sixteen years old. Younger people are welcome at our family events, as long as they come with an adult." },
+          { sp: "A", text: "And please always bring a water bottle. There's a tap at the café where you can refill it, but we don't sell plastic bottles." },
+          { sp: "A", text: "Okay, any questions before we head to the shed?" }
+        ],
+        transcript: "hidden", maxPlays: null, source: "tự soạn" },
+
+      { id: "w04-s1", kind: "speaking-prompt", part: 1, lang: "en-GB", rate: 0.95, pauseMs: 1500,
+        title: { vi: "Speaking Part 1 – câu hỏi của giám khảo", en: "Speaking Part 1 – examiner questions" },
+        speakers: [{ id: "E", name: "Examiner", voice: "female" }],
+        lines: P1.map(function (p) { return { sp: "E", text: p.q }; }),
+        transcript: "shown", maxPlays: null, source: "tự soạn" },
+
+      { id: "w04-s1m", kind: "speaking-model", part: 1, lang: "en-GB", rate: 0.95, pauseMs: 800,
+        title: { vi: "Speaking Part 1 – câu trả lời mẫu (nhân vật giả định)", en: "Speaking Part 1 – model answers (imaginary persona)" },
+        speakers: [{ id: "E", name: "Examiner", voice: "female" }, { id: "C", name: "Candidate", voice: "male" }],
+        lines: P1.reduce(function (acc, p) { acc.push({ sp: "E", text: p.q }); acc.push({ sp: "C", text: p.model }); return acc; }, []),
+        transcript: "hidden", maxPlays: null, source: "tự soạn" }
+    ],
+
+    mock: null
+  };
+})();

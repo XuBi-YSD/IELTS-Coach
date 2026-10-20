@@ -43,3 +43,24 @@ table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px
 .ctl{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
 .small{font-size:13px;color:var(--mute)}
 .lang{display:inline-flex;border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:6px}.lang button{border:0;background:var(--card);color:var(--ink);padding:4px 12px;font:inherit;font-size:13px;cursor:pointer}.lang button.on{background:var(--blue);color:#fff}
+/* Tuần, bài đọc, bài nghe, mock */
+.wkbar{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0 10px}.wkbar.modes{margin-top:0}
+.wkbar .wk{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:4px 11px;border-radius:16px;font:inherit;font-size:13px;cursor:pointer}
+.wkbar .wk.on{background:var(--navy);border-color:var(--navy);color:var(--card)}.wkbar .wk:disabled{opacity:.4;cursor:not-allowed}
+.selfw{display:inline-block;font-size:12px;color:var(--navy);background:var(--line);border-radius:10px;padding:2px 10px;margin:0 0 6px}
+h4{font-size:15px;margin:10px 0 2px}
+.ex{border-left:4px solid var(--blue);padding:8px 12px;border-radius:6px;background:var(--bg);margin:8px 0}
+table.vocab td:first-child{width:38%}
+.passage p{margin:8px 0}.plabel{display:inline-block;min-width:22px;color:var(--blue)}
+.script .transcript{margin-top:8px;padding:8px 12px;background:var(--bg);border-radius:8px;font-size:14px}
+.q input.gapin{display:inline-block;width:auto;min-width:120px;max-width:220px;padding:3px 6px;margin:0 4px}
+.q input.ok,.q select.ok{border-color:var(--green);background:#d9f5e5;color:#0b5c32}.q input.bad,.q select.bad{border-color:var(--red);background:#fde0e0;color:#8a1f1f}
+.q select{padding:5px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;max-width:100%}
+.q label.inl{display:inline-block;padding:2px 6px}
+.lim{font-weight:600;letter-spacing:.02em}.opts{margin:6px 0;font-size:14px}.mrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}.mrow span{min-width:110px}
+.data{margin:8px 0}.crit{margin-top:6px}.model{margin-top:6px}
+.small.bad{color:var(--red)}
+.timer{position:sticky;top:46px;z-index:4;background:var(--navy);color:var(--card);font-weight:700;font-size:18px;text-align:center;border-radius:10px;padding:6px;margin:8px 0}
+.timer.low{background:var(--red);color:#fff}
+.warn{background:#fde0e0;color:#8a1f1f;border-radius:8px;padding:6px 10px;font-size:14px;margin:6px 0}
+.result{border-color:var(--blue)}
