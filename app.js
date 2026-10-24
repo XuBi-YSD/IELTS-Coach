@@ -670,7 +670,7 @@
   }
   function renderVideo() {
     const D = scenes(), s = D.scenes[si], t = T(), wn = st.sel || 2;
-    const vid = `<div class="card"><h3>${esc(t.week)} ${wn}</h3><video id="wbv" controls preload="metadata" style="width:100%;border-radius:10px;background:#fff" src="videos/week-${String(wn).padStart(2, "0")}.mp4"><track kind="subtitles" src="videos/week-${String(wn).padStart(2, "0")}.srt" srclang="${st.lang}" label="Subtitles"></video><p class="small" id="wbmsg">${esc(t.vidLocal)}</p></div>`;
+    const vid = `<div class="card"><h3>${esc(t.week)} ${wn}</h3><video id="wbv" controls preload="metadata" style="width:100%;border-radius:10px;background:#fff" src="videos/v2/week-${String(wn).padStart(2, "0")}.mp4"><track kind="subtitles" src="videos/v2/week-${String(wn).padStart(2, "0")}.srt" srclang="${st.lang}" label="Subtitles"></video><p class="small" id="wbmsg">${esc(t.vidLocal)}</p></div>`;
     if (wn !== 2) {
       view.innerHTML = weekBar() + vid; bindBar(renderVideo);
       const v = $("#wbv"); v.onerror = () => { $("#wbmsg").textContent = t.vidMissing; v.style.display = "none"; };
