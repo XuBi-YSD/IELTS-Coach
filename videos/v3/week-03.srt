@@ -1,0 +1,355 @@
+1
+00:00:00,300 --> 00:00:00,750
+Hello!
+
+2
+00:00:00,750 --> 00:00:04,421
+This week you will learn four reading techniques:
+
+3
+00:00:04,421 --> 00:00:10,416
+skimming to get the main idea, scanning to find details, recognising paraphrase,
+
+4
+00:00:10,416 --> 00:00:13,788
+and telling True, False, and Not Given apart.
+
+5
+00:00:15,088 --> 00:00:15,526
+First:
+
+6
+00:00:15,526 --> 00:00:19,610
+skimming, which means reading quickly for the main idea.
+
+7
+00:00:19,610 --> 00:00:25,590
+Read the title, the first sentence, and often the last sentence of each paragraph.
+
+8
+00:00:25,590 --> 00:00:27,341
+Don't stop at new words.
+
+9
+00:00:27,341 --> 00:00:33,832
+Then write three to five words next to each paragraph, so you know where to come back to.
+
+10
+00:00:35,132 --> 00:00:39,645
+Read the title and the first sentence of each paragraph.
+
+11
+00:00:39,645 --> 00:00:41,660
+Do not stop at new words.
+
+12
+00:00:44,460 --> 00:00:44,966
+Second:
+
+13
+00:00:44,966 --> 00:00:48,215
+scanning, which means searching for a detail.
+
+14
+00:00:48,215 --> 00:00:50,959
+Decide first what you are looking for:
+
+15
+00:00:50,959 --> 00:00:56,303
+a capitalised name, a number, a date, or a keyword that is hard to change.
+
+16
+00:00:56,303 --> 00:01:00,852
+When you find it, read the sentence or two around it carefully.
+
+17
+00:01:02,152 --> 00:01:04,946
+Scan for names, numbers and dates.
+
+18
+00:01:04,946 --> 00:01:09,136
+Then read the sentence around the answer carefully.
+
+19
+00:01:11,936 --> 00:01:12,394
+Third:
+
+20
+00:01:12,394 --> 00:01:13,233
+paraphrase.
+
+21
+00:01:13,233 --> 00:01:17,352
+Questions rarely use the exact words from the passage.
+
+22
+00:01:17,352 --> 00:01:22,463
+Expect synonyms, a change of word class, active changed to passive,
+
+23
+00:01:22,463 --> 00:01:25,591
+or an idea expressed in the opposite way.
+
+24
+00:01:25,591 --> 00:01:32,456
+If a question copies the passage word for word, check carefully, because it may be a trap.
+
+25
+00:01:33,756 --> 00:01:36,937
+Free of charge means costs nothing.
+
+26
+00:01:36,937 --> 00:01:39,301
+Only a few means not many.
+
+27
+00:01:39,301 --> 00:01:42,300
+She decided becomes her decision.
+
+28
+00:01:45,600 --> 00:01:46,152
+Fourth:
+
+29
+00:01:46,152 --> 00:01:47,965
+True, False, Not Given.
+
+30
+00:01:47,965 --> 00:01:51,356
+True means the passage says the same thing.
+
+31
+00:01:51,356 --> 00:01:54,667
+False means the passage says the opposite.
+
+32
+00:01:54,667 --> 00:02:01,211
+Not Given means there is not enough information to confirm or reject the statement.
+
+33
+00:02:01,211 --> 00:02:06,336
+Watch out for limiting words such as all, most, only, and almost.
+
+34
+00:02:07,636 --> 00:02:09,090
+The passage says:
+
+35
+00:02:09,090 --> 00:02:11,313
+Only a few tickets remain.
+
+36
+00:02:11,313 --> 00:02:12,938
+The statement says:
+
+37
+00:02:12,938 --> 00:02:15,076
+Plenty of tickets remain.
+
+38
+00:02:18,376 --> 00:02:19,857
+The passage says:
+
+39
+00:02:19,857 --> 00:02:22,382
+The museum opened a new cafe.
+
+40
+00:02:22,382 --> 00:02:24,037
+The statement says:
+
+41
+00:02:24,037 --> 00:02:26,824
+The cafe serves vegetarian food.
+
+42
+00:02:30,124 --> 00:02:32,159
+Answers to the two examples.
+
+43
+00:02:32,159 --> 00:02:37,682
+The first is False, because only a few and plenty of have opposite meanings.
+
+44
+00:02:37,682 --> 00:02:39,426
+The second is Not Given,
+
+45
+00:02:39,426 --> 00:02:44,803
+because the passage only says there is a new café and never mentions food.
+
+46
+00:02:44,803 --> 00:02:48,364
+Even if it sounds reasonable, you must not guess.
+
+47
+00:02:49,664 --> 00:02:51,321
+Three common mistakes.
+
+48
+00:02:51,321 --> 00:02:51,622
+One:
+
+49
+00:02:51,622 --> 00:02:56,592
+choosing False just because the passage doesn't mention something,
+
+50
+00:02:56,592 --> 00:02:59,302
+when the answer should be Not Given.
+
+51
+00:02:59,302 --> 00:02:59,604
+Two:
+
+52
+00:02:59,604 --> 00:03:04,347
+using outside knowledge instead of relying only on the passage.
+
+53
+00:03:04,347 --> 00:03:04,799
+Three:
+
+54
+00:03:04,799 --> 00:03:09,920
+reading every word carefully from the start and running out of time.
+
+55
+00:03:09,920 --> 00:03:11,576
+Skim first, then scan.
+
+56
+00:03:12,876 --> 00:03:15,192
+Mini quiz, three questions.
+
+57
+00:03:15,192 --> 00:03:21,194
+For each one, you hear a short extract from a passage and a statement.
+
+58
+00:03:21,194 --> 00:03:24,024
+Choose True, False, or Not Given.
+
+59
+00:03:24,024 --> 00:03:26,940
+The answers are in the next scene.
+
+60
+00:03:28,240 --> 00:03:28,594
+One.
+
+61
+00:03:28,594 --> 00:03:30,100
+The passage says:
+
+62
+00:03:30,100 --> 00:03:31,959
+Flash is not allowed.
+
+63
+00:03:31,959 --> 00:03:33,641
+The statement says:
+
+64
+00:03:33,641 --> 00:03:35,324
+Flash is permitted.
+
+65
+00:03:35,324 --> 00:03:35,678
+Two.
+
+66
+00:03:35,678 --> 00:03:37,183
+The passage says:
+
+67
+00:03:37,183 --> 00:03:41,345
+The festival attracted a large crowd this year.
+
+68
+00:03:41,345 --> 00:03:43,027
+The statement says:
+
+69
+00:03:43,027 --> 00:03:47,543
+The festival was held for the first time this year.
+
+70
+00:03:47,543 --> 00:03:48,075
+Three.
+
+71
+00:03:48,075 --> 00:03:49,580
+The passage says:
+
+72
+00:03:49,580 --> 00:03:52,590
+Tickets cost nothing for students.
+
+73
+00:03:52,590 --> 00:03:54,273
+The statement says:
+
+74
+00:03:54,273 --> 00:03:56,752
+Students can enter for free.
+
+75
+00:04:03,052 --> 00:04:03,648
+Answers.
+
+76
+00:04:03,648 --> 00:04:03,946
+One:
+
+77
+00:04:03,946 --> 00:04:08,118
+False, because not allowed is the opposite of permitted.
+
+78
+00:04:08,118 --> 00:04:08,416
+Two:
+
+79
+00:04:08,416 --> 00:04:12,587
+Not Given, because the passage only says it was crowded,
+
+80
+00:04:12,587 --> 00:04:17,429
+and doesn't say whether it was the first time the event was held.
+
+81
+00:04:17,429 --> 00:04:17,876
+Three:
+
+82
+00:04:17,876 --> 00:04:22,420
+True, because cost nothing is a paraphrase of enter for free.
+
+83
+00:04:24,720 --> 00:04:25,284
+Summary:
+
+84
+00:04:25,284 --> 00:04:31,551
+for each passage, skim for two to three minutes, underline the keywords in the questions,
+
+85
+00:04:31,551 --> 00:04:36,551
+scan to find the location, and then read the answer sentence carefully.
+
+86
+00:04:36,551 --> 00:04:42,537
+Do the ten exercises in the app, then take the weekly test with two reading passages.
+
+87
+00:04:42,537 --> 00:04:46,059
+The target is at least sixty-five percent correct.
+
+88
+00:04:46,059 --> 00:04:48,876
+For every wrong answer, note the reason:
+
+89
+00:04:48,876 --> 00:04:52,608
+vocabulary, a Not Given trap, or running out of time.

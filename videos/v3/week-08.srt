@@ -1,0 +1,255 @@
+1
+00:00:00,300 --> 00:00:00,748
+Hello!
+
+2
+00:00:00,748 --> 00:00:06,497
+This week you will write a Task 1 report of over one hundred and fifty words,
+
+3
+00:00:06,497 --> 00:00:08,961
+and use three complex structures:
+
+4
+00:00:08,961 --> 00:00:12,396
+relative clauses, conditionals, and inversion.
+
+5
+00:00:13,696 --> 00:00:15,921
+A Task 1 report has four parts:
+
+6
+00:00:15,921 --> 00:00:19,941
+an introduction, an overview, and two detail paragraphs.
+
+7
+00:00:19,941 --> 00:00:25,182
+Please note that every number in this video is made-up illustrative data.
+
+8
+00:00:25,182 --> 00:00:29,848
+In the exam, you may only describe what is actually in the chart.
+
+9
+00:00:31,148 --> 00:00:37,940
+The chart shows how many residents visited three cafés between 2010 and 2025.
+
+10
+00:00:41,240 --> 00:00:41,976
+Point two:
+
+11
+00:00:41,976 --> 00:00:47,349
+the overview states only the general trend, covers all the main features,
+
+12
+00:00:47,349 --> 00:00:48,894
+and gives no numbers.
+
+13
+00:00:48,894 --> 00:00:51,176
+Start it with the word Overall.
+
+14
+00:00:52,476 --> 00:00:57,420
+Overall, Café A grew strongly, whereas Café B declined.
+
+15
+00:01:00,720 --> 00:01:01,591
+Point three:
+
+16
+00:01:01,591 --> 00:01:03,261
+prepositions with data.
+
+17
+00:01:03,261 --> 00:01:07,182
+From and to show the starting point and the end point,
+
+18
+00:01:07,182 --> 00:01:09,796
+while by shows the amount of change.
+
+19
+00:01:09,796 --> 00:01:12,264
+The numbers here are illustrative.
+
+20
+00:01:13,564 --> 00:01:17,282
+Café A rose from thirty percent to fifty-five percent,
+
+21
+00:01:17,282 --> 00:01:20,380
+an increase of twenty-five percentage points.
+
+22
+00:01:23,680 --> 00:01:24,575
+Point four:
+
+23
+00:01:24,575 --> 00:01:25,957
+relative clauses.
+
+24
+00:01:25,957 --> 00:01:33,112
+When you add extra information between two commas, use which or who, and don't use that.
+
+25
+00:01:34,412 --> 00:01:40,076
+Café A, which had the lowest share in 2010, overtook Café B.
+
+26
+00:01:43,376 --> 00:01:44,177
+Point five:
+
+27
+00:01:44,177 --> 00:01:45,124
+conditionals.
+
+28
+00:01:45,124 --> 00:01:49,858
+The second conditional is about unreal situations in the present.
+
+29
+00:01:49,858 --> 00:01:54,300
+The third conditional is about unreal situations in the past,
+
+30
+00:01:54,300 --> 00:02:00,272
+and it uses had plus the past participle, and would have plus the past participle.
+
+31
+00:02:01,572 --> 00:02:06,732
+If the café had stayed open later, it would have attracted more customers.
+
+32
+00:02:10,032 --> 00:02:10,857
+Point six:
+
+33
+00:02:10,857 --> 00:02:11,682
+inversion.
+
+34
+00:02:11,682 --> 00:02:16,466
+After Rarely, Never, or Seldom at the start of a sentence,
+
+35
+00:02:16,466 --> 00:02:19,930
+put the auxiliary verb before the subject.
+
+36
+00:02:19,930 --> 00:02:23,064
+Use it only a few times in your essay.
+
+37
+00:02:24,364 --> 00:02:27,940
+Seldom did the share drop below thirty percent.
+
+38
+00:02:31,240 --> 00:02:32,482
+Common mistakes.
+
+39
+00:02:32,482 --> 00:02:34,966
+Putting numbers in the overview.
+
+40
+00:02:34,966 --> 00:02:38,536
+Inventing reasons that the chart doesn't give.
+
+41
+00:02:38,536 --> 00:02:44,823
+Writing rose to fifty-five from thirty instead of rose from thirty to fifty-five.
+
+42
+00:02:44,823 --> 00:02:46,764
+Using that after a comma.
+
+43
+00:02:46,764 --> 00:02:50,800
+And forgetting to invert the auxiliary after Rarely.
+
+44
+00:02:52,600 --> 00:02:53,358
+Quiz one:
+
+45
+00:02:53,358 --> 00:02:58,071
+the sentence In 2020, Café A reached fifty-five percent.
+
+46
+00:02:58,071 --> 00:03:00,595
+Is it an overview or a detail?
+
+47
+00:03:00,595 --> 00:03:01,353
+Quiz two:
+
+48
+00:03:01,353 --> 00:03:06,823
+fix the mistake in Tourists, that visit the old town, spend more.
+
+49
+00:03:06,823 --> 00:03:07,749
+Quiz three:
+
+50
+00:03:07,749 --> 00:03:11,536
+fix the mistake in Rarely visitors come here.
+
+51
+00:03:15,836 --> 00:03:16,524
+Answers.
+
+52
+00:03:16,524 --> 00:03:16,868
+One:
+
+53
+00:03:16,868 --> 00:03:20,393
+detail, because it has a specific number.
+
+54
+00:03:20,393 --> 00:03:20,737
+Two:
+
+55
+00:03:20,737 --> 00:03:27,100
+use who instead of that, because there is a comma and it refers to people.
+
+56
+00:03:27,100 --> 00:03:27,616
+Three:
+
+57
+00:03:27,616 --> 00:03:30,109
+Rarely do visitors come here.
+
+58
+00:03:30,109 --> 00:03:33,548
+Put the auxiliary do before the subject.
+
+59
+00:03:35,848 --> 00:03:36,396
+Summary:
+
+60
+00:03:36,396 --> 00:03:40,847
+paraphrase in the introduction, give an overview with no numbers,
+
+61
+00:03:40,847 --> 00:03:44,477
+and write two detail paragraphs that match the chart.
+
+62
+00:03:44,477 --> 00:03:48,517
+Add which clauses, conditionals, and inversion for variety.
+
+63
+00:03:48,517 --> 00:03:53,996
+Do the week eight exercises in the app, write a Task 1 report in twenty minutes,
+
+64
+00:03:53,996 --> 00:03:56,872
+and then compare it with the model answer.

@@ -1,0 +1,291 @@
+1
+00:00:00,300 --> 00:00:00,728
+Hello!
+
+2
+00:00:00,728 --> 00:00:03,655
+This week you will practise three things:
+
+3
+00:00:03,655 --> 00:00:07,510
+matching headings to paragraphs, completing summaries,
+
+4
+00:00:07,510 --> 00:00:11,436
+and learning vocabulary for the environment and health.
+
+5
+00:00:12,736 --> 00:00:13,462
+Point one:
+
+6
+00:00:13,462 --> 00:00:14,769
+Matching Headings.
+
+7
+00:00:14,769 --> 00:00:20,214
+A heading sums up the main idea of the whole paragraph, not a small detail.
+
+8
+00:00:20,214 --> 00:00:25,223
+Read the first sentence and the last sentence, and then ask yourself:
+
+9
+00:00:25,223 --> 00:00:27,328
+what is this paragraph doing?
+
+10
+00:00:28,628 --> 00:00:31,340
+What is the whole paragraph doing?
+
+11
+00:00:34,140 --> 00:00:39,502
+The most common trap is choosing a heading just because it shares a word with the
+
+12
+00:00:39,502 --> 00:00:40,164
+paragraph.
+
+13
+00:00:40,164 --> 00:00:43,142
+For example, a paragraph mentions boats once,
+
+14
+00:00:43,142 --> 00:00:46,452
+but it is really about people changing their jobs.
+
+15
+00:00:47,752 --> 00:00:53,032
+The town once relied on fishing, but now most people work in a factory.
+
+16
+00:00:56,332 --> 00:00:57,082
+Point two:
+
+17
+00:00:57,082 --> 00:00:58,507
+Summary Completion.
+
+18
+00:00:58,507 --> 00:01:04,732
+Before you look for the answer, predict whether the missing word is a noun, a verb,
+
+19
+00:01:04,732 --> 00:01:05,932
+or an adjective.
+
+20
+00:01:05,932 --> 00:01:10,132
+Then check the word limit and copy the spelling exactly.
+
+21
+00:01:11,432 --> 00:01:14,720
+After the word to, we need a base verb.
+
+22
+00:01:17,520 --> 00:01:18,496
+Point three:
+
+23
+00:01:18,496 --> 00:01:22,643
+Yes, No, Not Given asks about the writer's opinion.
+
+24
+00:01:22,643 --> 00:01:25,895
+True, False, Not Given asks about facts.
+
+25
+00:01:25,895 --> 00:01:32,400
+If the writer only reports events and gives no opinion, the answer is Not Given.
+
+26
+00:01:33,700 --> 00:01:36,988
+I would argue that the plan is too risky.
+
+27
+00:01:40,288 --> 00:01:41,483
+Point four:
+
+28
+00:01:41,483 --> 00:01:42,678
+vocabulary.
+
+29
+00:01:42,678 --> 00:01:45,829
+First, the environment group.
+
+30
+00:01:45,829 --> 00:01:48,328
+Please repeat after me.
+
+31
+00:01:49,628 --> 00:01:51,421
+Biodiversity.
+
+32
+00:01:51,421 --> 00:01:52,524
+Habitat.
+
+33
+00:01:52,524 --> 00:01:54,455
+Cut emissions.
+
+34
+00:01:54,455 --> 00:01:57,764
+Sustainable development.
+
+35
+00:02:01,064 --> 00:02:03,584
+A sedentary lifestyle.
+
+36
+00:02:03,584 --> 00:02:05,417
+Chronic illness.
+
+37
+00:02:05,417 --> 00:02:07,594
+Disease prevention.
+
+38
+00:02:07,594 --> 00:02:09,656
+Mental well-being.
+
+39
+00:02:12,956 --> 00:02:16,307
+Four common mistakes for Vietnamese learners.
+
+40
+00:02:16,307 --> 00:02:16,605
+One:
+
+41
+00:02:16,605 --> 00:02:19,956
+choosing a heading because it repeats a word.
+
+42
+00:02:19,956 --> 00:02:20,254
+Two:
+
+43
+00:02:20,254 --> 00:02:24,126
+writing two words when the question allows only one.
+
+44
+00:02:24,126 --> 00:02:24,573
+Three:
+
+45
+00:02:24,573 --> 00:02:28,519
+changing the word form when copying from the passage.
+
+46
+00:02:28,519 --> 00:02:28,892
+Four:
+
+47
+00:02:28,892 --> 00:02:34,700
+answering No when the writer only reports events, when it should be Not Given.
+
+48
+00:02:36,500 --> 00:02:37,237
+Quiz one:
+
+49
+00:02:37,237 --> 00:02:42,149
+the instruction says ONE WORD ONLY, and you write the river.
+
+50
+00:02:42,149 --> 00:02:44,195
+Is that correct or wrong?
+
+51
+00:02:44,195 --> 00:02:44,932
+Quiz two:
+
+52
+00:02:44,932 --> 00:02:51,072
+the writer only reports that the council banned cars, and gives no opinion.
+
+53
+00:02:51,072 --> 00:02:52,464
+The statement is:
+
+54
+00:02:52,464 --> 00:02:55,411
+the writer believes the ban is wise.
+
+55
+00:02:55,411 --> 00:02:57,212
+Yes, No, or Not Given?
+
+56
+00:03:01,512 --> 00:03:02,451
+Quiz three:
+
+57
+00:03:02,451 --> 00:03:06,120
+what do we call a long period with no rain?
+
+58
+00:03:06,120 --> 00:03:07,827
+Drought, or erosion?
+
+59
+00:03:07,827 --> 00:03:10,728
+Choose before you hear the answer.
+
+60
+00:03:14,028 --> 00:03:14,742
+Answers.
+
+61
+00:03:14,742 --> 00:03:15,099
+One:
+
+62
+00:03:15,099 --> 00:03:18,490
+wrong, because the river is two words.
+
+63
+00:03:18,490 --> 00:03:18,847
+Two:
+
+64
+00:03:18,847 --> 00:03:24,024
+Not Given, because the writer does not express an opinion.
+
+65
+00:03:24,024 --> 00:03:24,559
+Three:
+
+66
+00:03:24,559 --> 00:03:28,040
+drought, which means a long dry period.
+
+67
+00:03:28,040 --> 00:03:31,788
+Erosion is when soil or rock is worn away.
+
+68
+00:03:34,088 --> 00:03:34,617
+Summary:
+
+69
+00:03:34,617 --> 00:03:37,925
+a heading is the main idea of the whole paragraph,
+
+70
+00:03:37,925 --> 00:03:42,159
+a summary needs a predicted word class and the right word limit,
+
+71
+00:03:42,159 --> 00:03:46,526
+and for opinion questions you look for signals such as in my view.
+
+72
+00:03:46,526 --> 00:03:51,950
+Do the week six exercises in the app, time yourself at twenty minutes per passage,
+
+73
+00:03:51,950 --> 00:03:56,912
+and review vocabulary on a schedule of day one, three, seven, and fourteen.

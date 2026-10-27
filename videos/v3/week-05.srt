@@ -1,0 +1,351 @@
+1
+00:00:00,300 --> 00:00:00,719
+Hello!
+
+2
+00:00:00,719 --> 00:00:06,092
+This week you will learn to recognise the four Writing Task 2 question types,
+
+3
+00:00:06,092 --> 00:00:09,790
+write an introduction with a paraphrase and a thesis,
+
+4
+00:00:09,790 --> 00:00:13,140
+and write a conclusion without adding new ideas.
+
+5
+00:00:14,440 --> 00:00:18,014
+A well-organised Task 2 essay has four paragraphs:
+
+6
+00:00:18,014 --> 00:00:21,946
+an introduction, two body paragraphs, and a conclusion.
+
+7
+00:00:21,946 --> 00:00:25,020
+Write at least two hundred and fifty words.
+
+8
+00:00:25,020 --> 00:00:31,311
+A suggested split of the forty minutes is five minutes planning, thirty minutes writing,
+
+9
+00:00:31,311 --> 00:00:33,169
+and five minutes checking.
+
+10
+00:00:33,169 --> 00:00:37,816
+Each body paragraph still follows the TEEL model from lesson one.
+
+11
+00:00:39,116 --> 00:00:41,194
+There are four question types:
+
+12
+00:00:41,194 --> 00:00:44,795
+opinion, discussion, problem-solution, and two-part.
+
+13
+00:00:44,795 --> 00:00:48,466
+Read the final instruction of the question carefully,
+
+14
+00:00:48,466 --> 00:00:51,236
+because it decides your essay structure.
+
+15
+00:00:51,236 --> 00:00:56,084
+Leaving out part of the question is the biggest task response mistake.
+
+16
+00:00:57,384 --> 00:00:57,997
+Opinion:
+
+17
+00:00:57,997 --> 00:01:01,059
+to what extent do you agree or disagree?
+
+18
+00:01:01,059 --> 00:01:01,901
+Discussion:
+
+19
+00:01:01,901 --> 00:01:05,041
+discuss both views and give your opinion.
+
+20
+00:01:05,041 --> 00:01:06,649
+Problem and solution:
+
+21
+00:01:06,649 --> 00:01:09,864
+what are the causes, and what can be done?
+
+22
+00:01:09,864 --> 00:01:10,553
+Two-part:
+
+23
+00:01:10,553 --> 00:01:14,688
+why is this happening, and is it positive or negative?
+
+24
+00:01:17,988 --> 00:01:20,104
+An introduction has two parts.
+
+25
+00:01:20,104 --> 00:01:24,053
+Sentence one paraphrases the question in your own words:
+
+26
+00:01:24,053 --> 00:01:28,989
+use synonyms, change the word class, or change the sentence structure.
+
+27
+00:01:28,989 --> 00:01:34,560
+Sentence two is your thesis, which states your position or how you will answer.
+
+28
+00:01:34,560 --> 00:01:38,580
+Don't copy the question, and don't write a vague opening.
+
+29
+00:01:39,880 --> 00:01:41,017
+The prompt says:
+
+30
+00:01:41,017 --> 00:01:44,215
+Every student should learn to cook at school.
+
+31
+00:01:44,215 --> 00:01:45,139
+A paraphrase:
+
+32
+00:01:45,139 --> 00:01:49,048
+Schools ought to teach all pupils how to prepare meals.
+
+33
+00:01:52,348 --> 00:01:54,412
+A thesis for an opinion essay:
+
+34
+00:01:54,412 --> 00:02:00,124
+I largely agree, because cooking is a practical skill that supports healthy living.
+
+35
+00:02:03,424 --> 00:02:05,906
+A conclusion needs only two sentences.
+
+36
+00:02:05,906 --> 00:02:09,172
+Start with a linking phrase such as in conclusion,
+
+37
+00:02:09,172 --> 00:02:13,026
+restate your view in different words from the introduction,
+
+38
+00:02:13,026 --> 00:02:18,840
+and then summarise your reasons or give a recommendation directly connected to your view.
+
+39
+00:02:18,840 --> 00:02:23,608
+If an idea is not in the body paragraphs, don't put it in the conclusion.
+
+40
+00:02:24,908 --> 00:02:30,696
+In conclusion, teaching cooking in schools gives pupils a practical life skill.
+
+41
+00:02:30,696 --> 00:02:34,652
+Schools should therefore offer short, regular lessons.
+
+42
+00:02:37,952 --> 00:02:40,935
+Body paragraphs follow the question type.
+
+43
+00:02:40,935 --> 00:02:46,173
+For discussion, give one view per paragraph, and state your own opinion.
+
+44
+00:02:46,173 --> 00:02:51,556
+For two-part questions, write one paragraph per question, and answer both.
+
+45
+00:02:51,556 --> 00:02:57,522
+For problem-solution, paragraph one describes the problems and paragraph two gives
+
+46
+00:02:57,522 --> 00:02:58,904
+matching solutions.
+
+47
+00:03:00,204 --> 00:03:03,061
+The benefits outweigh the drawbacks.
+
+48
+00:03:03,061 --> 00:03:06,314
+Heavy traffic contributes to the problem.
+
+49
+00:03:06,314 --> 00:03:09,012
+Governments must tackle the issue.
+
+50
+00:03:12,312 --> 00:03:14,045
+Four common mistakes.
+
+51
+00:03:14,045 --> 00:03:14,375
+One:
+
+52
+00:03:14,375 --> 00:03:18,996
+copying the question word for word as your introduction.
+
+53
+00:03:18,996 --> 00:03:19,326
+Two:
+
+54
+00:03:19,326 --> 00:03:21,224
+having no clear thesis.
+
+55
+00:03:21,224 --> 00:03:21,719
+Three:
+
+56
+00:03:21,719 --> 00:03:26,917
+missing part of the question, especially in two-part questions.
+
+57
+00:03:26,917 --> 00:03:27,330
+Four:
+
+58
+00:03:27,330 --> 00:03:30,218
+adding new ideas in the conclusion.
+
+59
+00:03:30,218 --> 00:03:36,984
+Also, don't begin every sentence mechanically with firstly, secondly, or moreover.
+
+60
+00:03:38,284 --> 00:03:40,373
+Mini quiz, three questions.
+
+61
+00:03:40,373 --> 00:03:47,181
+Listen to each prompt and decide whether it is an opinion, discussion, problem-solution,
+
+62
+00:03:47,181 --> 00:03:48,806
+or two-part question.
+
+63
+00:03:48,806 --> 00:03:51,436
+The answers are in the next scene.
+
+64
+00:03:52,736 --> 00:03:53,074
+One.
+
+65
+00:03:53,074 --> 00:03:57,629
+Public parks are more important than shopping centres.
+
+66
+00:03:57,629 --> 00:04:01,003
+To what extent do you agree or disagree?
+
+67
+00:04:01,003 --> 00:04:01,340
+Two.
+
+68
+00:04:01,340 --> 00:04:05,727
+Plastic waste is a growing problem in coastal towns.
+
+69
+00:04:05,727 --> 00:04:10,451
+What problems does it cause, and how can they be solved?
+
+70
+00:04:10,451 --> 00:04:10,957
+Three.
+
+71
+00:04:10,957 --> 00:04:16,777
+Many people now eat in restaurants more often than they cook at home.
+
+72
+00:04:16,777 --> 00:04:17,790
+Why is this?
+
+73
+00:04:17,790 --> 00:04:21,248
+Is it a positive or negative development?
+
+74
+00:04:27,548 --> 00:04:28,130
+Answers.
+
+75
+00:04:28,130 --> 00:04:28,421
+One:
+
+76
+00:04:28,421 --> 00:04:33,151
+opinion, because it asks to what extent do you agree or disagree.
+
+77
+00:04:33,151 --> 00:04:33,442
+Two:
+
+78
+00:04:33,442 --> 00:04:39,045
+problem-solution, because it asks about both the problem and how to solve it.
+
+79
+00:04:39,045 --> 00:04:39,482
+Three:
+
+80
+00:04:39,482 --> 00:04:44,648
+two-part, because it has two separate questions, why this is happening,
+
+81
+00:04:44,648 --> 00:04:50,324
+and whether it is a positive or negative development, so you must answer both.
+
+82
+00:04:52,624 --> 00:04:53,164
+Summary:
+
+83
+00:04:53,164 --> 00:04:58,629
+identify the question type, write an introduction with a paraphrase and a thesis,
+
+84
+00:04:58,629 --> 00:05:04,499
+cover every part of the question in the body, and write a conclusion with no new ideas.
+
+85
+00:05:04,499 --> 00:05:06,659
+Do the ten exercises in the app,
+
+86
+00:05:06,659 --> 00:05:10,909
+then write a two-hundred-and-fifty-word essay in forty minutes.
+
+87
+00:05:10,909 --> 00:05:16,982
+After that, mark it yourself on the four criteria and rewrite your weakest body paragraph.
+
+88
+00:05:16,982 --> 00:05:22,312
+Your self-marked score is only an estimate, and it doesn't replace a real exam.

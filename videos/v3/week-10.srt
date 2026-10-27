@@ -1,0 +1,247 @@
+1
+00:00:00,300 --> 00:00:00,702
+Hello!
+
+2
+00:00:00,702 --> 00:00:05,526
+This week you will learn how to manage your time in Reading and Writing,
+
+3
+00:00:05,526 --> 00:00:09,948
+and how to correct your mistakes in depth after a timed mock test.
+
+4
+00:00:11,248 --> 00:00:12,201
+Strategy one:
+
+5
+00:00:12,201 --> 00:00:13,519
+timing in Reading.
+
+6
+00:00:13,519 --> 00:00:18,795
+Our own suggestion is about seventeen, twenty, and twenty-three minutes.
+
+7
+00:00:18,795 --> 00:00:21,506
+Passage three is usually the hardest,
+
+8
+00:00:21,506 --> 00:00:26,488
+so an even split of twenty minutes each can leave you short of time.
+
+9
+00:00:27,788 --> 00:00:31,652
+Write a provisional answer and come back to it later.
+
+10
+00:00:34,952 --> 00:00:36,524
+The ninety-second rule:
+
+11
+00:00:36,524 --> 00:00:41,582
+if you have spent that long on a question and still can't find the answer,
+
+12
+00:00:41,582 --> 00:00:44,932
+write a provisional answer, mark it, and move on.
+
+13
+00:00:44,932 --> 00:00:48,896
+In the last two minutes, fill in every blank that remains.
+
+14
+00:00:50,196 --> 00:00:51,200
+Strategy two:
+
+15
+00:00:51,200 --> 00:00:52,590
+timing in Writing.
+
+16
+00:00:52,590 --> 00:00:57,763
+About twenty minutes for Task 1 and about forty minutes for Task 2,
+
+17
+00:00:57,763 --> 00:01:01,932
+and in each task leave time for planning and checking.
+
+18
+00:01:01,932 --> 00:01:05,484
+Don't let Task 1 run into the time for Task 2.
+
+19
+00:01:06,784 --> 00:01:10,312
+Allocate about forty minutes to Task 2.
+
+20
+00:01:13,112 --> 00:01:14,349
+Strategy three:
+
+21
+00:01:14,349 --> 00:01:17,649
+deep error correction with an error log.
+
+22
+00:01:17,649 --> 00:01:23,011
+Sort your old mistakes into groups, and then proofread in passes.
+
+23
+00:01:23,011 --> 00:01:26,559
+In pass one, check only verbs and subjects.
+
+24
+00:01:26,559 --> 00:01:29,776
+In pass two, articles and plural nouns.
+
+25
+00:01:29,776 --> 00:01:33,488
+In pass three, linking words and punctuation.
+
+26
+00:01:34,788 --> 00:01:37,788
+The number of visitors has increased.
+
+27
+00:01:40,588 --> 00:01:45,148
+Many students work part-time, which reduces their study time.
+
+28
+00:01:48,448 --> 00:01:52,672
+This policy can cause serious damage to the environment.
+
+29
+00:01:55,972 --> 00:01:57,057
+Strategy four:
+
+30
+00:01:57,057 --> 00:02:01,242
+after a mock test, mark yourself on the four criteria,
+
+31
+00:02:01,242 --> 00:02:06,899
+and then choose exactly three goals, starting with your lowest criterion.
+
+32
+00:02:06,899 --> 00:02:08,836
+Goals must be measurable.
+
+33
+00:02:08,836 --> 00:02:12,556
+This is only our own estimate, not a real score.
+
+34
+00:02:13,856 --> 00:02:18,056
+Every body paragraph contains one specific example.
+
+35
+00:02:21,356 --> 00:02:22,413
+Common mistakes:
+
+36
+00:02:22,413 --> 00:02:26,707
+splitting Reading evenly into twenty, twenty, and twenty minutes,
+
+37
+00:02:26,707 --> 00:02:31,265
+getting stuck for four or five minutes on a single gap-fill question,
+
+38
+00:02:31,265 --> 00:02:34,436
+and setting vague goals such as improve grammar.
+
+39
+00:02:35,736 --> 00:02:37,708
+Mini quiz, question one.
+
+40
+00:02:37,708 --> 00:02:44,940
+If you split your time evenly, twenty, twenty, and twenty minutes across three passages,
+
+41
+00:02:44,940 --> 00:02:46,748
+what is the main risk?
+
+42
+00:02:46,748 --> 00:02:48,720
+Think for a few seconds.
+
+43
+00:02:52,020 --> 00:02:53,017
+Question two.
+
+44
+00:02:53,017 --> 00:02:59,922
+You have spent about ninety seconds on a question, and you still haven't found the answer.
+
+45
+00:02:59,922 --> 00:03:01,380
+What should you do?
+
+46
+00:03:04,680 --> 00:03:05,953
+Question three.
+
+47
+00:03:05,953 --> 00:03:11,976
+Which sentence joins two independent clauses with only a comma, A or B?
+
+48
+00:03:15,276 --> 00:03:15,959
+Answers.
+
+49
+00:03:15,959 --> 00:03:16,301
+One:
+
+50
+00:03:16,301 --> 00:03:22,960
+you may run short of time on passage three, because it is usually the hardest.
+
+51
+00:03:22,960 --> 00:03:23,302
+Two:
+
+52
+00:03:23,302 --> 00:03:27,485
+write a provisional answer, mark it, and move on.
+
+53
+00:03:27,485 --> 00:03:27,998
+Three:
+
+54
+00:03:27,998 --> 00:03:32,266
+A, because it has no linking word after the comma.
+
+55
+00:03:32,266 --> 00:03:35,340
+Sentence B has so, so it is correct.
+
+56
+00:03:37,640 --> 00:03:38,195
+Summary:
+
+57
+00:03:38,195 --> 00:03:42,287
+plan your time with clear checkpoints, proofread in passes,
+
+58
+00:03:42,287 --> 00:03:44,646
+and choose three measurable goals.
+
+59
+00:03:44,646 --> 00:03:45,964
+One important note:
+
+60
+00:03:45,964 --> 00:03:48,946
+the mock test is our own shortened version,
+
+61
+00:03:48,946 --> 00:03:52,553
+so the estimated band may be higher than in reality.
+
+62
+00:03:52,553 --> 00:03:55,952
+The app does not guarantee your real exam result.
