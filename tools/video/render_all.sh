@@ -5,8 +5,8 @@
 #   videos that already exist are skipped (never overwritten).
 set -u
 HERE="$(cd "$(dirname "$0")" && pwd)"
-PY="${PYTHON:-python3}"
-[ -x "$HERE/.venv/bin/python" ] && PY="$HERE/.venv/bin/python"
+PY="${PYTHON:-/Users/maitrongduy/Private Project/20261015-ClaudeCode-FileManagement-Lesson/.venv/bin/python}"  # needs edge_tts + Pillow + numpy
+[ -x "$HERE/.venv/bin/python" ] && [ -z "${PYTHON:-}" ] && PY="$HERE/.venv/bin/python"
 OUT="$PWD/output"; PREFIX=""
 while getopts "o:n:" o; do case $o in o) OUT="$OPTARG";; n) PREFIX="$OPTARG";; esac; done
 shift $((OPTIND-1))

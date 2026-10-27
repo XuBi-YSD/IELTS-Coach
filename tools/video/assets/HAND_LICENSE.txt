@@ -1,0 +1,4 @@
+hand_cc0_color.png / hand_cc0_color.json
+Source: Wikimedia Commons, File:Hand-33988.svg (Pixabay), licence CC0 (public domain).
+Copied from /Users/maitrongduy/Private Project/20261015-ClaudeCode-FileManagement-Lesson/assets/hand_candidates/
+"tip" = pen-tip pixel position inside the PNG (480x403): [30, 395] (bottom-left).

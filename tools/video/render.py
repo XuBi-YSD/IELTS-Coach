@@ -4,7 +4,7 @@
 Usage:  python3 render.py <scenes.json> <output_dir> [--name week-02] [--music file.mp3]
                           [--voice-en Samantha] [--voice-vi Linh] [--rate-en 165] [--keep-work]
 Output: <output_dir>/<name>.mp4 (1920x1080, 30fps, H.264 + AAC) and <name>.srt
-Voices: macOS `say` (offline). Frames are piped as rawvideo into ffmpeg.
+Voices: edge-tts neural (online, text sent to Microsoft; cached in .tts_cache by hash). Frames are piped as rawvideo into ffmpeg.
 """
 import argparse, json, math, os, re, shutil, subprocess, sys, time, unicodedata, wave
 import numpy as np
@@ -221,7 +221,7 @@ class IllusItem:
 
 
 # ---------------------------------------------------------------- hand sprite
-def make_hand():
+def make_hand_fallback():
     S = 2
     cw = 600
     im = Image.new("RGBA", (cw * S, cw * S), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
@@ -261,6 +261,34 @@ def make_hand():
     col = (hc * ha[..., None] + 0 * sa[..., None] * (1 - ha[..., None])) / np.maximum(ta, 1e-5)[..., None]
     return col, ta, tip
 
+def make_hand(scale=0.72):
+    """CC0 hand image (assets/hand_cc0_color.png, tip from .json) + soft shadow; falls back to PIL drawing."""
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
+    png, js = os.path.join(d, "hand_cc0_color.png"), os.path.join(d, "hand_cc0_color.json")
+    if not (os.path.exists(png) and os.path.exists(js)):
+        print("WARNING: hand image not found, using drawn fallback hand")
+        return make_hand_fallback()
+    hd = Image.open(png).convert("RGBA")
+    tip0 = json.load(open(js))["tip"]
+    hd = hd.resize((int(hd.width * scale), int(hd.height * scale)), Image.LANCZOS)
+    tip = (int(tip0[0] * scale), int(tip0[1] * scale))
+    # the PNG is cut flat on the right (arm): fade the last 35% of the width so it does not look chopped
+    arr_h = np.asarray(hd).copy()
+    ramp = np.clip((hd.width - np.arange(hd.width)) / (0.35 * hd.width), 0, 1).astype(np.float32)
+    arr_h[..., 3] = (arr_h[..., 3] * ramp[None, :]).astype(np.uint8)
+    hd = Image.fromarray(arr_h)
+    pad = 40
+    cv = Image.new("RGBA", (hd.width + 2 * pad, hd.height + 2 * pad), (0, 0, 0, 0))
+    a = np.asarray(hd)[..., 3]
+    sh = Image.new("L", cv.size, 0)
+    sh.paste(Image.fromarray(a), (pad + 12, pad + 14))
+    sh = np.asarray(sh.filter(ImageFilter.GaussianBlur(8))).astype(np.float32) * 0.30
+    shadow = np.zeros((cv.height, cv.width, 4), np.uint8); shadow[..., 3] = sh.astype(np.uint8)
+    cv = Image.alpha_composite(Image.fromarray(shadow), cv)
+    cv.alpha_composite(hd, (pad, pad))
+    arr = np.asarray(cv).astype(np.float32)
+    return arr[..., :3], arr[..., 3] / 255.0, (tip[0] + pad, tip[1] + pad)
+
 HAND = None
 def blit_hand(frame, x, y):
     col, a, tip = HAND
@@ -278,16 +306,92 @@ def blit_hand(frame, x, y):
 def run(cmd, **kw):
     return subprocess.run(cmd, check=True, **kw)
 
-def tts(text, lang, out_wav, voices, rate):
-    aiff = out_wav.replace(".wav", ".aiff")
-    txt = re.sub(r"_{2,}", " ... ", text)
-    voice = voices["vi"] if lang.lower().startswith("vi") else voices["en"]
-    r = rate["vi"] if lang.lower().startswith("vi") else rate["en"]
-    tf = out_wav.replace(".wav", ".txt")
-    open(tf, "w", encoding="utf-8").write(txt)
-    run(["say", "-v", voice, "-r", str(r), "-o", aiff, "-f", tf])
-    run([FFMPEG, "-y", "-loglevel", "error", "-i", aiff, "-ar", "44100", "-ac", "1", "-c:a", "pcm_s16le", out_wav])
-    os.remove(aiff)
+# --- TTS: edge-tts (Microsoft neural voices; sends the narration text to Microsoft's online service) ---
+CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".tts_cache")
+VI_MARKED = set("ăâđêôơưáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ")
+# Vietnamese words written without diacritics (must never be treated as English)
+VI_NOMARK = set("""nay cho hai sao ba quay sai suy hay thi do trong to an la ma ban ca co con cu den di du em hoc khi
+mo nha bo be bi ve vo tu mua xem lam bai cau cac gi ra vao thu ten tre the tai nam ngu nga bay bon sau tam chin muoi
+nhe nhu nen neu nao nay no ong qua rat roi se so ta thay tin toi tuan vua voi xin""".split())
+
+def eng_vocab(data):
+    """English words known from the lesson itself: English-only text lines, highlights, English narration."""
+    v = set()
+    wd = lambda t: re.findall(r"[A-Za-z][A-Za-z'’-]*", t)
+    for sc in data["scenes"]:
+        for line in sc.get("text_display", "").split("\n"):
+            if not any(c in VI_MARKED for c in line.lower()):
+                v.update(w.lower() for w in wd(line))
+        for h in sc.get("highlight", []): v.update(w.lower() for w in wd(h))
+        if sc.get("voice_lang", "").startswith("en"): v.update(w.lower() for w in wd(sc["voice_text"]))
+    v.add("ielts")
+    return v
+
+def split_langs(text, lang, vocab):
+    """List of (segment_text, 'en'|'vi'). For vi scenes, English runs are read with the en voice."""
+    if not lang.lower().startswith("vi"):
+        return [(text, "en")]
+    toks = text.split()
+    core = lambda t: re.sub(r"^[^\w]+|[^\w]+$", "", t)
+    flag = []
+    for t in toks:
+        w = core(t); lw = w.lower()
+        ok = (len(w) >= 3 and lw in vocab and lw not in VI_NOMARK and not any(c in VI_MARKED for c in lw)
+              and re.fullmatch(r"[A-Za-z'’-]+", w) is not None)
+        flag.append(ok)
+    for i in range(1, len(toks)):  # capitalised unmarked word in mid-sentence ("Writing Task")
+        w = core(toks[i])
+        if (not flag[i] and len(w) >= 4 and w[0].isupper() and re.fullmatch(r"[A-Za-z]+", w) and w.lower() not in VI_NOMARK
+                and not re.search(r"[.!?:]$", toks[i - 1])):
+            flag[i] = True
+    for i in range(1, len(toks) - 1):  # connector words between two English words (of / the / to ...)
+        w = core(toks[i]).lower()
+        if not flag[i] and flag[i - 1] and flag[i + 1] and w in vocab and w not in VI_NOMARK and re.fullmatch(r"[a-z]+", w):
+            flag[i] = True
+    for i in range(1, len(toks)):  # digits right after an English word ("Task 2")
+        if not flag[i] and flag[i - 1] and re.fullmatch(r"\d+[.,;:?!]*", toks[i]): flag[i] = True
+    segs = []
+    for t, f in zip(toks, flag):
+        lg = "en" if f else "vi"
+        if segs and segs[-1][1] == lg: segs[-1][0] += " " + t
+        else: segs.append([t, lg])
+    return [(a, b) for a, b in segs]
+
+def _edge_to_wav(text, voice, rate, out_wav):
+    import asyncio, edge_tts
+    tmp = out_wav + ".mp3"
+    last = None
+    for attempt in range(5):
+        try:
+            asyncio.run(edge_tts.Communicate(text, voice, rate=rate).save(tmp))
+            run([FFMPEG, "-y", "-loglevel", "error", "-i", tmp, "-ar", "44100", "-ac", "1", "-c:a", "pcm_s16le", out_wav])
+            os.remove(tmp)
+            return
+        except Exception as e:
+            last = e; time.sleep(3 * (attempt + 1))
+    raise SystemExit(f"edge-tts failed 5 times (voice {voice}, text '{text[:60]}...'): {type(last).__name__} {last}. "
+                     "Check the network connection; NOT falling back to the macOS 'say' voice.")
+
+def tts(text, lang, out_wav, voices, rate, vocab=frozenset()):
+    import hashlib
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    parts = []
+    for seg, lg in split_langs(text, lang, vocab):
+        voice, r = (voices["vi"], rate["vi"]) if lg == "vi" else (voices["en"], rate["en"])
+        key = hashlib.sha256(f"{voice}|{r}|{seg}".encode("utf-8")).hexdigest()[:24]
+        cached = os.path.join(CACHE_DIR, key + ".wav")
+        if not os.path.exists(cached):
+            _edge_to_wav(seg, voice, r, cached)
+            time.sleep(0.6)  # be gentle with the service (it throttles bursts)
+        parts.append(read_wav(cached))
+    gap = np.zeros(int(0.06 * 44100), np.int16)
+    out = []
+    for i, p in enumerate(parts):
+        out.append(p)
+        if i < len(parts) - 1: out.append(gap)
+    arr = np.concatenate(out)
+    with wave.open(out_wav, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(44100); w.writeframes(arr.tobytes())
 
 def wav_dur(p):
     out = subprocess.run([FFPROBE, "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", p],
@@ -343,8 +447,8 @@ def main():
     ap.add_argument("scenes"); ap.add_argument("outdir")
     ap.add_argument("--name", default=None)
     ap.add_argument("--music", default=None)
-    ap.add_argument("--voice-en", default="Samantha"); ap.add_argument("--voice-vi", default="Linh")
-    ap.add_argument("--rate-en", type=int, default=165); ap.add_argument("--rate-vi", type=int, default=175)
+    ap.add_argument("--voice-en", default="en-US-JennyNeural"); ap.add_argument("--voice-vi", default="vi-VN-HoaiMyNeural")
+    ap.add_argument("--rate-en", default="-5%"); ap.add_argument("--rate-vi", default="+0%")
     ap.add_argument("--keep-work", action="store_true")
     ap.add_argument("--max-scenes", type=int, default=0, help="debug: only first N scenes")
     ap.add_argument("--encoder", default="libx264", choices=["libx264", "h264_videotoolbox"])
@@ -363,11 +467,12 @@ def main():
 
     # 1) voice + timeline
     LEAD = 0.3
+    vocab = eng_vocab(data)
     timeline = []
     t0 = 0.0
     for sc in scenes:
         wavp = os.path.join(work, f"{sc['id']}.wav")
-        tts(sc["voice_text"], sc.get("voice_lang", "en-US"), wavp, voices, rate)
+        tts(sc["voice_text"], sc.get("voice_lang", "en-US"), wavp, voices, rate, vocab)
         vd = wav_dur(wavp)
         pause = float(sc.get("pause_after_sec", 1.0))
         dur = LEAD + vd + max(0.5, pause)
